@@ -8,6 +8,8 @@ import UniversalStream from "./components/UniversalStream";
 import { FaFacebook, FaInstagram, FaDiscord } from 'react-icons/fa';
 import Navbar from './components/Navbar';
 import AuthButton from './components/AuthButton';
+import MobileMenu from './components/MobileMenu';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -43,6 +45,7 @@ export default function Home() {
                 <FaDiscord size={32} />
               </a>
             </div>
+            <MobileMenu currentPath="/" />
           </div>
         </div>
       </header>
@@ -215,6 +218,7 @@ export default function Home() {
         />
       </section>
 
+      <Footer />
     </div>
   );
 }

@@ -6,6 +6,8 @@ import { rajdhani } from "../fonts";
 import { FaFacebook, FaInstagram, FaDiscord, FaUserTie, FaUsers } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
 import AuthButton from '../components/AuthButton';
+import MobileMenu from '../components/MobileMenu';
+import Footer from '../components/Footer';
 
 export default function Team() {
   const teamMembers = [
@@ -90,6 +92,7 @@ export default function Team() {
                 <FaDiscord size={32} />
               </a>
             </div>
+            <MobileMenu currentPath="/team" />
           </div>
         </div>
       </header>

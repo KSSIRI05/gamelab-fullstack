@@ -217,3 +217,37 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [00:48:15.453] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:48:15.616] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:51:55.798] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:51:58.070] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:52:17.981] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:20.029] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:52:22.555] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:52:23.683] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:16.110] Server  LOG     ✓ Compiled in 78ms
+[00:53:45.822] Server  LOG     ✓ Compiled in 56ms
+[00:54:06.664] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:54:10.374] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:54:16.023] Server  ERROR   ⨯ Error: The default export is not a React Component in "/team/not-found"
+[00:54:16.481] Server  ERROR   ⨯ Error: The default export is not a React Component in "/team/not-found"
+[00:54:16.499] Server  LOG     ✓ Compiled in 1343ms
+[00:54:17.803] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:27.215] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:54:30.789] Server  ERROR   React does not recognize the `allowTransparency` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `allowtransparency` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+[00:54:30.929] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:31.110] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:54:35.369] Server  LOG     ✓ Compiled in 315ms
+[00:54:35.574] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:49.686] Server  LOG     ✓ Compiled in 120ms
+[00:54:49.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:04.847] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:56:22.866] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:57:40.455] Server  LOG     ✓ Compiled in 62ms
+[00:57:50.864] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:57:55.397] Server  LOG     ✓ Compiled in 45ms
+[00:57:58.336] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:58:14.264] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:58:16.539] Server  LOG     ✓ Compiled in 55ms
+[00:58:22.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:22.639] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:59:01.107] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22

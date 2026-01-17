@@ -185,11 +185,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/context/AuthContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
-;
 ;
 ;
 ;
@@ -197,29 +195,10 @@ function AuthButton() {
     _s();
     const { user, logout, isAuthenticated, isLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    const [isDropdownOpen, setIsDropdownOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const dropdownRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const handleLogout = ()=>{
         logout();
         router.push('/');
-        setIsDropdownOpen(false);
     };
-    // Fermer le dropdown quand on clique en dehors
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "AuthButton.useEffect": ()=>{
-            function handleClickOutside(event) {
-                if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                    setIsDropdownOpen(false);
-                }
-            }
-            document.addEventListener('mousedown', handleClickOutside);
-            return ({
-                "AuthButton.useEffect": ()=>{
-                    document.removeEventListener('mousedown', handleClickOutside);
-                }
-            })["AuthButton.useEffect"];
-        }
-    }["AuthButton.useEffect"], []);
     // Afficher un indicateur de chargement pendant l'initialisation
     if (isLoading) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -231,17 +210,17 @@ function AuthButton() {
                     children: "Chargement..."
                 }, void 0, false, {
                     fileName: "[project]/app/components/AuthButton.tsx",
-                    lineNumber: 39,
+                    lineNumber: 21,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/components/AuthButton.tsx",
-                lineNumber: 38,
+                lineNumber: 20,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/components/AuthButton.tsx",
-            lineNumber: 37,
+            lineNumber: 19,
             columnNumber: 7
         }, this);
     }
@@ -256,7 +235,7 @@ function AuthButton() {
                             className: "text-white"
                         }, void 0, false, {
                             fileName: "[project]/app/components/AuthButton.tsx",
-                            lineNumber: 49,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -268,7 +247,7 @@ function AuthButton() {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/AuthButton.tsx",
-                            lineNumber: 50,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this),
                         user.isINPTStudent && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -276,35 +255,35 @@ function AuthButton() {
                             children: "INPT"
                         }, void 0, false, {
                             fileName: "[project]/app/components/AuthButton.tsx",
-                            lineNumber: 52,
+                            lineNumber: 34,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/AuthButton.tsx",
-                    lineNumber: 48,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: handleLogout,
-                    className: "flex items-center justify-center w-10 h-10 bg-red-600 hover:bg-red-700 rounded-lg text-white transition-colors",
+                    className: "flex items-center justify-center w-10 h-10 bg-purple-800/50 hover:bg-red-600 rounded-lg text-white transition-colors duration-300",
                     title: "Déconnexion",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaSignOutAlt"], {
                         className: "text-sm"
                     }, void 0, false, {
                         fileName: "[project]/app/components/AuthButton.tsx",
-                        lineNumber: 60,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/AuthButton.tsx",
-                    lineNumber: 55,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/AuthButton.tsx",
-            lineNumber: 47,
+            lineNumber: 29,
             columnNumber: 7
         }, this);
     }
@@ -317,7 +296,7 @@ function AuthButton() {
                 children: "Connexion"
             }, void 0, false, {
                 fileName: "[project]/app/components/AuthButton.tsx",
-                lineNumber: 68,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -326,17 +305,17 @@ function AuthButton() {
                 children: "Inscription"
             }, void 0, false, {
                 fileName: "[project]/app/components/AuthButton.tsx",
-                lineNumber: 74,
+                lineNumber: 56,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/AuthButton.tsx",
-        lineNumber: 67,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }
-_s(AuthButton, "wfuUoaBeDQmRlVgW7hS7rKihH4c=", false, function() {
+_s(AuthButton, "nbFYvhKAX11vA9G369m3Va5kTSM=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]

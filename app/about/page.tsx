@@ -6,6 +6,8 @@ import { rajdhani } from "../fonts";
 import { FaFacebook, FaInstagram, FaDiscord, FaGamepad, FaTrophy, FaUsers } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
 import AuthButton from '../components/AuthButton';
+import MobileMenu from '../components/MobileMenu';
+import Footer from '../components/Footer';
 
 export default function About() {
   return (
@@ -35,6 +37,7 @@ export default function About() {
               <FaDiscord size={32} />
             </a>
             </div>
+            <MobileMenu currentPath="/about" />
           </div>
         </div>
       </header>
@@ -137,6 +140,8 @@ export default function About() {
           </motion.section>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

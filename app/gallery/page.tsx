@@ -6,6 +6,8 @@ import { rajdhani } from "../fonts";
 import { FaFacebook, FaInstagram, FaDiscord } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
 import AuthButton from '../components/AuthButton';
+import MobileMenu from '../components/MobileMenu';
+import Footer from '../components/Footer';
 
 export default function Gallery() {
   // Ajoutez ici les liens de vos posts Instagram
@@ -45,6 +47,7 @@ export default function Gallery() {
                 <FaDiscord size={32} />
               </a>
             </div>
+            <MobileMenu currentPath="/gallery" />
           </div>
         </div>
       </header>
@@ -61,7 +64,7 @@ export default function Gallery() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {instagramPosts.map((postUrl, index) => (
               <motion.div
-                key={index}
+                key={postUrl}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1 }}
@@ -70,11 +73,12 @@ export default function Gallery() {
                 <iframe
                   src={`${postUrl}embed`}
                   className="w-full border-0"
-                  style={{ minHeight: '500px' }}
-                  allowTransparency={true}
-                  scrolling="no"
-                  frameBorder="0"
+                  style={{ 
+                    minHeight: '500px',
+                    border: 'none'
+                  }}
                   title={`Instagram post ${index + 1}`}
+                  loading="lazy"
                 />
               </motion.div>
             ))}
@@ -107,6 +111,8 @@ export default function Gallery() {
 
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
