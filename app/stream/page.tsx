@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { rajdhani, orbitron } from "../fonts";
+import { rajdhani } from "../fonts";
 import { FaFacebook, FaInstagram, FaDiscord } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
 import UniversalStream from '../components/UniversalStream';
@@ -44,7 +44,7 @@ export default function Stream() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <UniversalStream title="🔴 Live GAMELAB INPT" />
+            <UniversalStream url="https://www.youtube.com/watch?v=jfKfPfyJRdk" title="🔴 Live GAMELAB INPT" />
           </motion.div>
         </div>
       </main>
