@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { rajdhani, orbitron } from "../fonts";
 import { FaFacebook, FaInstagram, FaEnvelope, FaMapMarkerAlt, FaDiscord } from 'react-icons/fa';
 import Navbar from '../components/Navbar';
+import AuthButton from '../components/AuthButton';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -34,16 +35,19 @@ export default function Contact() {
           <div className="hidden lg:flex">
             <Navbar />
           </div>
-          <div className="flex gap-4">
-            <a href="https://www.facebook.com/gamelab.inpt.7" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-300 transition-colors duration-300">
-              <FaFacebook size={32} />
-            </a>
-            <a href="https://www.instagram.com/gamelabinpt/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-300 transition-colors duration-300">
-              <FaInstagram size={32} />
-            </a>
-            <a href="https://discord.gg/kqSCjXQJ" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-300 transition-colors duration-300">
-              <FaDiscord size={32} />
-            </a>
+          <div className="flex items-center gap-4">
+            <AuthButton />
+            <div className="flex gap-3">
+              <a href="https://www.facebook.com/gamelab.inpt.7" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-300 transition-colors duration-300">
+                <FaFacebook size={32} />
+              </a>
+              <a href="https://www.instagram.com/gamelabinpt/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-300 transition-colors duration-300">
+                <FaInstagram size={32} />
+              </a>
+              <a href="https://discord.gg/kqSCjXQJ" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-300 transition-colors duration-300">
+                <FaDiscord size={32} />
+              </a>
+            </div>
           </div>
         </div>
       </header>
