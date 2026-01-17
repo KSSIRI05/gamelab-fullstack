@@ -1,334 +1,62 @@
-[00:00:00.735] Server  LOG     ✓ Ready in 526ms
-[00:00:06.128] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.231] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:01.519] Server  WARN    ⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result.
+[00:00:01.867] Server  LOG     ✓ Ready in 1495ms
+[00:00:05.903] Server  LOG     ○ Compiling / ...
+[00:00:06.850] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.626] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:01:15.510] Server  LOG     ✓ Compiled in 23ms
+[00:02:24.746] Server  LOG     ✓ Compiled in 81ms
+[00:03:15.552] Server  LOG     ✓ Compiled in 37ms
+[00:04:00.821] Server  LOG     ✓ Compiled in 42ms
+[00:06:16.211] Server  LOG     ✓ Compiled in 26ms
+[00:07:49.540] Server  LOG     ✓ Compiled in 27ms
+[00:09:44.887] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:54.230] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:55.488] Server  LOG     ✓ Compiled in 58ms
+[00:11:27.013] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:11:34.456] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:11:34.456] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:13:44.019] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:38.528] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:13.536] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:47.257] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:16:43.391] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:26.317] Server  LOG     ✓ Compiled in 84ms
+[00:17:33.642] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:36.262] Server  LOG     ✓ Compiled in 55ms
+[00:19:46.077] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:46.230] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:30.956] Server  LOG     ✓ Compiled in 16ms
-[00:15:42.630] Server  LOG     ✓ Compiled in 189ms
-[00:16:30.950] Server  ERROR   ⨯ TypeError: useRef only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/react-client-hook-in-server-component
-[00:16:31.066] Browser ERROR   uncaughtError: TypeError: useRef only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/react-client-hook-in-server-component
-[00:16:50.429] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:16:50.506] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:50.611] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:19:25.524] Server  LOG     ✓ Compiled in 13ms
-[00:19:38.357] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:38.462] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:20:16.348] Server  LOG     ✓ Compiled in 19ms
-[00:20:24.520] Server  LOG     ✓ Compiled in 11ms
-[00:20:32.762] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:32.864] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:21:03.159] Server  LOG     ✓ Compiled in 13ms
-[00:21:10.082] Server  LOG     ✓ Compiled in 17ms
-[00:21:16.770] Server  LOG     ✓ Compiled in 12ms
-[00:21:20.241] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:20.349] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:24:44.849] Server  LOG     ✓ Compiled in 14ms
-[00:26:39.928] Server  LOG     ✓ Compiled in 15ms
-[00:26:40.043] Browser ERROR   ./app/page.tsx:9:20
-Ecmascript file had an error
-   7 | export default function Home() {
-   8 |
->  9 |   const orbitron = Orbitron({
-     |                    ^^^^^^^^
-  10 |   subsets: ["latin"],
-  11 |   weight: ["400", "600", "700"],
-  12 | });
-
-Font loaders must be called and assigned to a const in the module scope
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:27:20.111] Browser ERROR   ./app/page.tsx:9:20
-Ecmascript file had an error
-   7 | export default function Home() {
-   8 |
->  9 |   const orbitron = Orbitron({
-     |                    ^^^^^^^^
-  10 |   subsets: ["latin"],
-  11 |   weight: ["400", "600", "700"],
-  12 | });
-
-Font loaders must be called and assigned to a const in the module scope
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:29:14.052] Browser ERROR   ./app/page.tsx:9:20
-Ecmascript file had an error
-   7 | export default function Home() {
-   8 |
->  9 |   const orbitron = Orbitron({
-     |                    ^^^^^^^^
-  10 |   subsets: ["latin"],
-  11 |   weight: ["400", "600", "700"],
-  12 | });
-
-Font loaders must be called and assigned to a const in the module scope
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:30:03.613] Server  LOG     ✓ Compiled in 12ms
-[00:30:16.380] Server  LOG     ✓ Compiled in 12ms
-[00:30:22.565] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:30:22.666] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:30:49.311] Server  LOG     ✓ Compiled in 13ms
-[00:32:16.166] Server  LOG     ✓ Compiled in 11ms
-[00:32:16.264] Browser ERROR   uncaughtError: ReferenceError: orbitron is not defined
-[00:33:16.617] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:33:16.677] Server  LOG     ✓ Compiled in 769ms
-[00:33:16.732] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:16.836] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:33:38.457] Server  LOG     ✓ Compiled in 16ms
-[00:33:40.994] Server  LOG     ✓ Compiled in 15ms
-[00:33:44.423] Server  LOG     ✓ Compiled in 14ms
-[00:33:52.610] Server  LOG     ✓ Compiled in 14ms
-[00:33:55.994] Server  LOG     ✓ Compiled in 17ms
-[00:33:58.584] Server  LOG     ✓ Compiled in 14ms
-[00:34:03.925] Server  LOG     ✓ Compiled in 15ms
-[00:34:09.378] Server  LOG     ✓ Compiled in 15ms
-[00:34:18.551] Server  LOG     ✓ Compiled in 12ms
-[00:34:19.518] Server  LOG     ✓ Compiled in 15ms
-[00:34:26.556] Server  LOG     ✓ Compiled in 19ms
-[00:35:48.145] Server  LOG     ✓ Compiled in 15ms
-[00:35:56.764] Server  LOG     ✓ Compiled in 13ms
-[00:36:05.421] Server  LOG     ✓ Compiled in 16ms
-[00:36:10.494] Server  LOG     ✓ Compiled in 12ms
-[00:36:15.565] Server  LOG     ✓ Compiled in 12ms
-[00:36:18.012] Server  LOG     ✓ Compiled in 12ms
-[00:36:31.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:31.716] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:36:41.279] Server  LOG     ✓ Compiled in 12ms
-[00:36:43.637] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:43.637] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:36:53.825] Server  LOG     ✓ Compiled in 18ms
-[00:36:57.296] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:57.402] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:37:03.010] Server  LOG     ✓ Compiled in 14ms
-[00:37:05.917] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:06.023] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:37:15.022] Server  LOG     ✓ Compiled in 18ms
-[00:37:18.172] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:18.281] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:37:41.930] Server  LOG     ✓ Compiled in 22ms
-[00:37:43.910] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:44.012] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:38:02.592] Server  LOG     ✓ Compiled in 18ms
-[00:38:24.467] Server  LOG     ✓ Compiled in 60ms
-[00:38:28.852] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:38:28.954] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:38:49.249] Server  LOG     ✓ Compiled in 34ms
-[00:38:50.021] Server  LOG     ✓ Compiled in 33ms
-[00:39:13.712] Server  LOG     ✓ Compiled in 17ms
-[00:39:16.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:39:16.943] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:40:30.895] Server  LOG     ✓ Compiled in 15ms
-[00:40:47.873] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:40:47.873] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:40:54.455] Server  LOG     ✓ Compiled in 14ms
-[00:40:57.467] Server  LOG     ✓ Compiled in 11ms
-[00:41:42.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:41:42.377] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:43:04.254] Server  LOG     ✓ Compiled in 19ms
-[00:46:06.912] Server  LOG     ✓ Compiled in 20ms
-[00:46:10.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:46:10.360] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:47:22.462] Server  LOG     ✓ Compiled in 16ms
-[00:47:38.815] Server  LOG     ✓ Compiled in 17ms
-[00:47:44.960] Server  LOG     ✓ Compiled in 12ms
-[00:47:46.951] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:47:46.951] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:48:06.927] Server  LOG     ✓ Compiled in 16ms
-[00:48:17.317] Server  LOG     ✓ Compiled in 14ms
-[00:48:22.031] Server  LOG     ✓ Compiled in 13ms
-[00:50:03.226] Server  LOG     ✓ Compiled in 12ms
-[00:50:14.507] Server  LOG     ✓ Compiled in 13ms
-[00:51:14.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:51:14.187] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:51:16.778] Server  LOG     ✓ Compiled in 14ms
-[00:51:16.888] Browser ERROR   ./app/page.tsx:41:16
+[00:20:29.311] Server  LOG     ✓ Compiled in 105ms
+[00:20:36.672] Server  LOG     ✓ Compiled in 37ms
+[00:22:14.923] Server  LOG     ✓ Compiled in 84ms
+[00:23:46.654] Server  LOG     ✓ Compiled in 53ms
+[00:24:15.984] Server  LOG     ✓ Compiled in 32ms
+[00:24:35.080] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:24:41.120] Server  LOG     ✓ Compiled in 118ms
+[00:24:45.160] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:26:43.649] Server  LOG     ✓ Compiled in 27ms
+[00:27:24.795] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:27:32.300] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:27:59.100] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:28:49.883] Server  LOG     ✓ Compiled in 74ms
+[00:28:59.743] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:29:02.496] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:29:08.033] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:29:10.821] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:29:23.179] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:29:57.039] Server  LOG     ✓ Compiled in 122ms
+[00:30:01.122] Server  LOG     ✓ Compiled in 48ms
+[00:30:17.205] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:33:12.535] Server  LOG     ✓ Compiled in 150ms
+[00:33:12.992] Browser ERROR   ./app/page.tsx:182:4
 Parsing ecmascript source code failed
-  39 |         <section/>
-  40 |
-> 41 |       </header>
-     |                ^
-> 42 |     </div>
-     | ^^^^^
-  43 |   );
-  44 | }
-  45 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:53:39.556] Server  LOG     ✓ Compiled in 14ms
-[00:53:41.778] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:53:41.872] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:53:50.740] Server  LOG     ✓ Compiled in 12ms
-[00:53:52.844] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:53:52.844] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:53:58.149] Server  LOG     ✓ Compiled in 12ms
-[00:54:00.384] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:54:00.492] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:54:07.807] Server  LOG     ✓ Compiled in 14ms
-[00:54:43.930] Server  LOG     ✓ Compiled in 12ms
-[00:55:47.248] Server  LOG     ✓ Compiled in 16ms
-[00:55:52.780] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:55:52.780] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:56:31.039] Server  LOG     ✓ Compiled in 13ms
-[00:56:33.633] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:33.745] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:56:40.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:40.806] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:57:07.184] Server  LOG     ✓ Compiled in 12ms
-[00:57:10.772] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:57:10.772] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:57:59.620] Server  LOG     ✓ Compiled in 16ms
-[00:58:09.251] Server  LOG     ✓ Compiled in 13ms
-[00:58:12.884] Server  LOG     ✓ Compiled in 12ms
-[00:58:17.783] Server  LOG     ✓ Compiled in 15ms
-[00:58:20.948] Server  LOG     ✓ Compiled in 14ms
-[00:58:24.929] Server  LOG     ✓ Compiled in 17ms
-[00:58:48.546] Server  LOG     ✓ Compiled in 17ms
-[00:59:02.980] Server  LOG     ✓ Compiled in 15ms
-[00:59:34.723] Server  LOG     ✓ Compiled in 18ms
-[01:00:39.319] Server  LOG     ✓ Compiled in 19ms
-[01:00:59.579] Server  LOG     ✓ Compiled in 15ms
-[01:01:06.104] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:06.104] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:01:15.405] Server  LOG     ✓ Compiled in 11ms
-[01:01:18.221] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:18.331] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:01:24.187] Server  LOG     ✓ Compiled in 12ms
-[01:01:26.719] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:26.822] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:01:39.961] Server  LOG     ✓ Compiled in 19ms
-[01:01:41.922] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:42.024] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:01:50.284] Server  LOG     ✓ Compiled in 11ms
-[01:28:40.772] Server  LOG     ✓ Compiled in 14ms
-[01:29:00.077] Server  LOG     ✓ Compiled in 12ms
-[01:29:06.819] Server  LOG     ✓ Compiled in 14ms
-[01:29:11.011] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:29:11.130] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:29:40.894] Server  LOG     ✓ Compiled in 14ms
-[01:29:44.112] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:29:44.215] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:33:02.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:33:02.371] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:35:44.509] Server  LOG     ✓ Compiled in 21ms
-[01:35:44.610] Browser ERROR   ./app/page.tsx:46:11
-Parsing ecmascript source code failed
-  44 |
-  45 |
-> 46 |     </div>
-     |           ^
-> 47 |     </div>
-     | ^^^^^
-  48 |   );
-  49 | }
-  50 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[01:36:40.378] Server  LOG     ✓ Compiled in 13ms
-[01:36:43.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:36:43.980] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:36:44.055] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:36:44.167] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:37:05.108] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:37:05.211] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:37:49.292] Server  LOG     ✓ Compiled in 16ms
-[01:37:52.759] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:37:52.864] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:37:59.528] Server  LOG     ✓ Compiled in 13ms
-[01:38:01.973] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:38:02.074] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:38:21.602] Server  LOG     ✓ Compiled in 15ms
-[01:38:33.967] Server  LOG     ✓ Compiled in 13ms
-[01:38:37.176] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:38:37.277] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:38:47.057] Server  LOG     ✓ Compiled in 13ms
-[01:38:47.159] Browser ERROR   ./app/page.tsx:41:6
-Parsing ecmascript source code failed
-  39 |         {/* Optional dark overlay */}
-  40 |         <div className="absolute inset-0 bg-black/60 -z-10" /></div>
-> 41 |     </div>
-     |      ^^^^^
-  42 |   );
-  43 | }
-  44 |
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
 
 Unterminated regexp literal
 
@@ -340,23 +68,17 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[01:39:01.638] Server  LOG     ✓ Compiled in 12ms
-[01:39:03.292] Server  LOG     ✓ Compiled in 11ms
-[01:39:15.366] Server  LOG     ✓ Compiled in 12ms
-[01:39:18.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:39:18.769] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:39:26.398] Server  LOG     ✓ Compiled in 11ms
-[01:39:30.705] Server  LOG     ✓ Compiled in 16ms
-[01:39:30.809] Browser ERROR   ./app/page.tsx:42:1
+[00:33:12.993] Browser ERROR   ./app/page.tsx:182:4
 Parsing ecmascript source code failed
-  40 |     </div>
-  41 |   );
-> 42 | }
-     | ^
-  43 |
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
 
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+Unterminated regexp literal
 
 Import traces:
   Client Component Browser:
@@ -366,95 +88,17 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[01:39:56.166] Server  LOG     ✓ Compiled in 12ms
-[01:40:09.146] Server  LOG     ✓ Compiled in 13ms
-[01:40:20.050] Server  LOG     ✓ Compiled in 13ms
-[01:40:59.673] Server  LOG     ✓ Compiled in 17ms
-[01:42:08.335] Server  LOG     ✓ Compiled in 23ms
-[01:42:26.233] Server  LOG     ✓ Compiled in 22ms
-[01:42:48.505] Server  LOG     ✓ Compiled in 13ms
-[01:42:51.663] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:42:51.765] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:43:05.657] Server  LOG     ✓ Compiled in 14ms
-[01:43:08.322] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:43:08.422] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:43:29.525] Server  LOG     ✓ Compiled in 12ms
-[01:43:32.594] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:43:32.699] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:43:45.632] Server  LOG     ✓ Compiled in 16ms
-[01:44:31.932] Server  LOG     ✓ Compiled in 13ms
-[01:44:37.250] Server  LOG     ✓ Compiled in 11ms
-[01:44:51.566] Server  LOG     ✓ Compiled in 17ms
-[01:45:06.987] Server  LOG     ✓ Compiled in 20ms
-[01:45:10.975] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:45:11.076] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:45:40.058] Server  LOG     ✓ Compiled in 12ms
-[01:45:42.883] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:45:42.964] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:46:16.882] Server  LOG     ✓ Compiled in 17ms
-[01:46:20.453] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:46:20.560] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:46:23.552] Server  LOG     ✓ Compiled in 14ms
-[01:46:30.409] Server  LOG     ✓ Compiled in 18ms
-[01:46:44.441] Server  LOG     ✓ Compiled in 12ms
-[01:46:54.005] Server  LOG     ✓ Compiled in 12ms
-[01:46:57.746] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:46:57.847] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:47:04.822] Server  LOG     ✓ Compiled in 14ms
-[01:47:07.916] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:47:08.017] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:47:15.962] Server  LOG     ✓ Compiled in 12ms
-[01:47:18.748] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:47:18.848] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:47:23.046] Server  LOG     ✓ Compiled in 17ms
-[01:47:50.021] Server  LOG     ✓ Compiled in 14ms
-[01:48:16.675] Server  LOG     ✓ Compiled in 14ms
-[01:48:32.014] Server  LOG     ✓ Compiled in 13ms
-[01:48:35.430] Server  LOG     ✓ Compiled in 16ms
-[01:48:54.089] Server  LOG     ✓ Compiled in 14ms
-[01:49:11.691] Server  LOG     ✓ Compiled in 16ms
-[01:52:28.546] Server  LOG     ✓ Compiled in 13ms
-[01:52:49.444] Server  LOG     ✓ Compiled in 18ms
-[01:53:00.854] Server  LOG     ✓ Compiled in 19ms
-[01:53:14.882] Server  LOG     ✓ Compiled in 16ms
-[01:53:36.563] Server  LOG     ✓ Compiled in 13ms
-[01:53:51.611] Server  LOG     ✓ Compiled in 12ms
-[01:54:33.896] Server  LOG     ✓ Compiled in 15ms
-[01:55:14.375] Server  LOG     ✓ Compiled in 12ms
-[01:55:35.177] Server  LOG     ✓ Compiled in 18ms
-[01:55:44.463] Server  LOG     ✓ Compiled in 16ms
-[01:55:51.536] Server  LOG     ✓ Compiled in 14ms
-[01:56:00.611] Server  LOG     ✓ Compiled in 12ms
-[01:57:01.901] Server  LOG     ✓ Compiled in 13ms
-[01:57:07.390] Server  LOG     ✓ Compiled in 14ms
-[01:57:19.629] Server  LOG     ✓ Compiled in 12ms
-[01:57:29.570] Server  LOG     ✓ Compiled in 12ms
-[01:57:45.081] Server  LOG     ✓ Compiled in 13ms
-[01:57:52.329] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:57:52.438] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:58:44.185] Server  LOG     ✓ Compiled in 12ms
-[01:58:54.810] Server  LOG     ✓ Compiled in 16ms
-[01:58:54.922] Browser ERROR   ./app/page.tsx:38:12
+[00:34:42.494] Browser ERROR   ./app/page.tsx:182:4
 Parsing ecmascript source code failed
-  36 |               <source src="/gamelab.mp4" type="video/mp4" />
-  37 |             </video>
-> 38 |           />
-     |            ^
-  39 |           </div>
-  40 |         <div>
-  41 |           Hellow World
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
 
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
+Unterminated regexp literal
 
 Import traces:
   Client Component Browser:
@@ -464,127 +108,1921 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[01:59:05.458] Server  LOG     ✓ Compiled in 13ms
-[01:59:19.184] Server  LOG     ✓ Compiled in 13ms
-[01:59:50.080] Server  LOG     ✓ Compiled in 17ms
-[02:00:15.569] Server  LOG     ✓ Compiled in 13ms
-[02:00:27.813] Server  LOG     ✓ Compiled in 15ms
-[02:00:34.720] Server  LOG     ✓ Compiled in 14ms
-[02:01:08.101] Server  LOG     ✓ Compiled in 20ms
-[02:02:39.931] Server  LOG     ✓ Compiled in 19ms
-[02:02:54.932] Server  LOG     ✓ Compiled in 13ms
-[02:03:04.323] Server  LOG     ✓ Compiled in 17ms
-[02:03:12.953] Server  LOG     ✓ Compiled in 13ms
-[02:03:20.177] Server  LOG     ✓ Compiled in 13ms
-[02:03:32.923] Server  LOG     ✓ Compiled in 12ms
-[02:03:35.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:04:06.392] Server  LOG     ✓ Compiled in 16ms
-[02:04:15.938] Server  LOG     ✓ Compiled in 13ms
-[02:06:08.674] Server  LOG     ✓ Compiled in 14ms
-[02:06:19.874] Server  LOG     ✓ Compiled in 15ms
-[02:06:23.822] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:08:34.311] Server  LOG     ✓ Compiled in 33ms
-[02:08:38.400] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:09:21.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:10:23.617] Server  LOG     ✓ Compiled in 28ms
-[02:10:37.234] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:15:29.860] Server  LOG     ✓ Compiled in 34ms
-[02:17:37.818] Server  LOG     ✓ Compiled in 18ms
-[02:17:59.885] Server  LOG     ✓ Compiled in 18ms
-[02:18:08.710] Server  LOG     ✓ Compiled in 17ms
-[02:18:17.476] Server  LOG     ✓ Compiled in 11ms
-[02:18:20.582] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:18:20.582] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[02:18:30.882] Server  LOG     ✓ Compiled in 12ms
-[02:20:14.868] Server  LOG     ✓ Compiled in 14ms
-[02:20:31.088] Server  LOG     ✓ Compiled in 11ms
-[02:20:47.110] Server  LOG     ✓ Compiled in 12ms
-[02:20:51.576] Server  LOG     ✓ Compiled in 12ms
-[02:20:57.605] Server  LOG     ✓ Compiled in 12ms
-[02:21:19.011] Server  LOG     ✓ Compiled in 14ms
-[02:21:24.532] Server  LOG     ✓ Compiled in 16ms
-[02:22:09.053] Server  LOG     ✓ Compiled in 13ms
-[02:22:17.956] Server  LOG     ✓ Compiled in 13ms
-[02:22:23.465] Server  LOG     ✓ Compiled in 12ms
-[02:22:28.469] Server  LOG     ✓ Compiled in 16ms
-[02:22:47.266] Server  LOG     ✓ Compiled in 16ms
-[02:22:54.040] Server  LOG     ✓ Compiled in 16ms
-[02:22:59.147] Server  LOG     ✓ Compiled in 13ms
-[02:23:18.702] Server  LOG     ✓ Compiled in 17ms
-[02:23:33.198] Server  LOG     ✓ Compiled in 19ms
-[02:23:46.695] Server  LOG     ✓ Compiled in 19ms
-[02:23:55.385] Server  LOG     ✓ Compiled in 19ms
-[02:24:31.348] Server  LOG     ✓ Compiled in 16ms
-[02:24:51.798] Server  LOG     ✓ Compiled in 13ms
-[02:25:06.831] Server  LOG     ✓ Compiled in 13ms
-[02:25:27.528] Server  LOG     ✓ Compiled in 13ms
-[02:25:51.992] Server  LOG     ✓ Compiled in 15ms
-[02:25:55.329] Server  LOG     ✓ Compiled in 12ms
-[02:25:58.560] Server  LOG     ✓ Compiled in 13ms
-[02:26:04.272] Server  LOG     ✓ Compiled in 14ms
-[02:26:19.363] Server  LOG     ✓ Compiled in 13ms
-[02:26:31.312] Server  LOG     ✓ Compiled in 16ms
-[02:27:17.138] Server  LOG     ✓ Compiled in 18ms
-[02:27:35.304] Server  LOG     ✓ Compiled in 14ms
-[02:27:44.244] Server  LOG     ✓ Compiled in 13ms
-[02:27:48.402] Server  LOG     ✓ Compiled in 17ms
-[02:27:59.663] Server  LOG     ✓ Compiled in 13ms
-[02:28:18.421] Server  LOG     ✓ Compiled in 15ms
-[02:29:40.011] Server  LOG     ✓ Compiled in 14ms
-[02:30:01.951] Server  LOG     ✓ Compiled in 16ms
-[02:30:27.607] Server  LOG     ✓ Compiled in 16ms
-[02:30:48.390] Server  LOG     ✓ Compiled in 12ms
-[02:30:58.419] Server  LOG     ✓ Compiled in 13ms
-[02:31:07.888] Server  LOG     ✓ Compiled in 15ms
-[02:34:23.474] Server  LOG     ✓ Compiled in 220ms
-[02:34:36.233] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:34:36.341] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[02:36:36.821] Server  LOG     ✓ Compiled in 24ms
-[02:37:57.053] Server  LOG     ✓ Compiled in 15ms
-[02:38:14.836] Server  LOG     ✓ Compiled in 15ms
-[02:38:21.288] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:39:16.646] Server  LOG     ✓ Compiled in 14ms
-[02:39:24.741] Server  LOG     ✓ Compiled in 14ms
-[02:39:38.725] Server  LOG     ✓ Compiled in 27ms
-[02:41:57.791] Server  LOG     ✓ Compiled in 15ms
-[02:42:56.515] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:56.673] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:43:23.098] Server  LOG     ✓ Compiled in 20ms
-[02:43:30.658] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:44:19.378] Server  LOG     ✓ Compiled in 18ms
-[02:44:22.570] Server  LOG     ✓ Compiled in 16ms
-[02:44:24.892] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:44:46.975] Server  LOG     ✓ Compiled in 14ms
-[02:45:03.250] Server  LOG     ✓ Compiled in 18ms
-[02:45:24.220] Server  LOG     ✓ Compiled in 23ms
-[02:45:33.840] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:45:44.730] Server  LOG     ✓ Compiled in 15ms
-[02:46:00.897] Server  LOG     ✓ Compiled in 20ms
-[02:46:04.256] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:46:09.147] Server  LOG     ✓ Compiled in 14ms
-[02:46:26.685] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:55:20.213] Server  LOG     ✓ Compiled in 54ms
-[02:55:25.183] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:03:00.133] Server  LOG     ✓ Compiled in 288ms
-[03:08:23.659] Server  LOG     ✓ Compiled in 35ms
-[03:13:54.417] Server  LOG     ✓ Compiled in 316ms
-[03:18:11.420] Server  LOG     ✓ Compiled in 97ms
-[03:18:12.313] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
+[00:34:42.993] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
 
-Check the render method of `Home`.
-[03:19:43.749] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[03:19:43.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:20:39.234] Server  LOG     ✓ Compiled in 26ms
-[03:20:47.964] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:20:48.405] Browser ERROR   unhandledRejection: NotAllowedError: play() failed because the user didn't interact with the document first.
-[03:20:48.405] Browser ERROR   unhandledRejection: NotAllowedError: play() failed because the user didn't interact with the document first.
-[03:20:48.405] Browser ERROR   unhandledRejection: NotAllowedError: play() failed because the user didn't interact with the document first.
-[03:20:48.405] Browser ERROR   unhandledRejection: NotAllowedError: play() failed because the user didn't interact with the document first.
-[03:21:26.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:21:32.779] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:22:28.927] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:23:56.569] Server  LOG     ✓ Compiled in 24ms
-[03:23:56.642] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document.
-[03:24:02.393] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:43.608] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:43.985] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:55.429] Server  ERROR   ⨯ ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:34:55.548] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:55.985] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:57.272] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:57.518] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:58.261] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:58.261] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:58.402] Browser ERROR   uncaughtError: Error: ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:34:58.566] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:58.566] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:58.994] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:34:58.994] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:36:38.995] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:36:38.995] Browser ERROR   ./app/page.tsx:182:4
+Parsing ecmascript source code failed
+  180 |       </motion.button>
+  181 |     </div>
+> 182 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  183 |
+  184 |   {/* Bottom Left */}
+  185 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:36:40.001] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:39:18.780] Server  LOG     ✓ Compiled in 73ms
+[00:39:18.885] Browser ERROR   ./app/page.tsx:284:15
+Parsing ecmascript source code failed
+  282 |   </motion.div>
+  283 |
+> 284 |         </div>
+      |               ^
+> 285 |       </section>
+      | ^^^^^^^
+  286 |
+  287 |       {/* Live Stream Section */}
+  288 |       <section className="relative w-full py-20 bg-gradient-to-b from-black via-purple-950/20 to-black">
+
+Expected '</', got 'jsx text (
+      )'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:39:18.980] Browser ERROR   ./app/page.tsx:284:15
+Parsing ecmascript source code failed
+  282 |   </motion.div>
+  283 |
+> 284 |         </div>
+      |               ^
+> 285 |       </section>
+      | ^^^^^^^
+  286 |
+  287 |       {/* Live Stream Section */}
+  288 |       <section className="relative w-full py-20 bg-gradient-to-b from-black via-purple-950/20 to-black">
+
+Expected '</', got 'jsx text (
+      )'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:40:02.118] Server  LOG     ✓ Compiled in 83ms
+[00:40:02.226] Browser ERROR   ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:40:02.981] Browser ERROR   ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:40:42.404] Browser ERROR   ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:40:42.981] Browser ERROR   ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:40:50.288] Server  ERROR   ⨯ ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:40:50.432] Browser ERROR   uncaughtError: Error: ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:40:50.588] Browser ERROR   ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:40:50.588] Browser ERROR   ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:40:50.989] Browser ERROR   ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:40:50.989] Browser ERROR   ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:40:50.989] Browser ERROR   ./app/page.tsx:197:5
+Parsing ecmascript source code failed
+  195 |       </motion.button>
+  196 |     </div>
+> 197 |   </motion.div>
+      |     ^^^^^^^^^^
+  198 |
+  199 |   {/* Top Right */}
+  200 |   <motion.div
+
+Expected corresponding JSX closing tag for <div>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:12.990] Browser ERROR   ./app/page.tsx:198:4
+Parsing ecmascript source code failed
+  196 |       </motion.button>
+  197 |     </div>
+> 198 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  199 |
+  200 |   {/* Top Right */}
+  201 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:12.990] Browser ERROR   ./app/page.tsx:198:4
+Parsing ecmascript source code failed
+  196 |       </motion.button>
+  197 |     </div>
+> 198 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  199 |
+  200 |   {/* Top Right */}
+  201 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:39.332] Server  ERROR   ⨯ ./app/page.tsx:198:4
+Parsing ecmascript source code failed
+  196 |       </motion.button>
+  197 |     </div>
+> 198 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  199 |
+  200 |   {/* Top Right */}
+  201 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:41:39.431] Browser ERROR   uncaughtError: Error: ./app/page.tsx:198:4
+Parsing ecmascript source code failed
+  196 |       </motion.button>
+  197 |     </div>
+> 198 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  199 |
+  200 |   {/* Top Right */}
+  201 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:41:39.575] Browser ERROR   ./app/page.tsx:198:4
+Parsing ecmascript source code failed
+  196 |       </motion.button>
+  197 |     </div>
+> 198 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  199 |
+  200 |   {/* Top Right */}
+  201 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:39.575] Browser ERROR   ./app/page.tsx:198:4
+Parsing ecmascript source code failed
+  196 |       </motion.button>
+  197 |     </div>
+> 198 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  199 |
+  200 |   {/* Top Right */}
+  201 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:39.980] Browser ERROR   ./app/page.tsx:198:4
+Parsing ecmascript source code failed
+  196 |       </motion.button>
+  197 |     </div>
+> 198 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  199 |
+  200 |   {/* Top Right */}
+  201 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:39.980] Browser ERROR   ./app/page.tsx:198:4
+Parsing ecmascript source code failed
+  196 |       </motion.button>
+  197 |     </div>
+> 198 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  199 |
+  200 |   {/* Top Right */}
+  201 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:54.919] Browser ERROR   ./app/page.tsx:199:21
+Parsing ecmascript source code failed
+  197 |       <motion.button
+  198 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 199 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  200 |         transition={{ duration: 0.3 }}
+  201 |       >
+  202 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:41:54.980] Browser ERROR   ./app/page.tsx:199:21
+Parsing ecmascript source code failed
+  197 |       <motion.button
+  198 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 199 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  200 |         transition={{ duration: 0.3 }}
+  201 |       >
+  202 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:04.052] Server  ERROR   ⨯ ./app/page.tsx:199:21
+Parsing ecmascript source code failed
+  197 |       <motion.button
+  198 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 199 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  200 |         transition={{ duration: 0.3 }}
+  201 |       >
+  202 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:42:04.178] Browser ERROR   uncaughtError: Error: ./app/page.tsx:199:21
+Parsing ecmascript source code failed
+  197 |       <motion.button
+  198 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 199 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  200 |         transition={{ duration: 0.3 }}
+  201 |       >
+  202 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:42:04.321] Browser ERROR   ./app/page.tsx:199:21
+Parsing ecmascript source code failed
+  197 |       <motion.button
+  198 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 199 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  200 |         transition={{ duration: 0.3 }}
+  201 |       >
+  202 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:04.321] Browser ERROR   ./app/page.tsx:199:21
+Parsing ecmascript source code failed
+  197 |       <motion.button
+  198 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 199 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  200 |         transition={{ duration: 0.3 }}
+  201 |       >
+  202 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:04.992] Browser ERROR   ./app/page.tsx:199:21
+Parsing ecmascript source code failed
+  197 |       <motion.button
+  198 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 199 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  200 |         transition={{ duration: 0.3 }}
+  201 |       >
+  202 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:04.992] Browser ERROR   ./app/page.tsx:199:21
+Parsing ecmascript source code failed
+  197 |       <motion.button
+  198 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 199 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  200 |         transition={{ duration: 0.3 }}
+  201 |       >
+  202 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:42:04.992] Browser ERROR   ./app/page.tsx:199:21
+Parsing ecmascript source code failed
+  197 |       <motion.button
+  198 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 199 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  200 |         transition={{ duration: 0.3 }}
+  201 |       >
+  202 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:43:38.691] Browser ERROR   ./app/page.tsx:186:21
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         whileHover={{ opacity: 1 }}
+      |                     ^
+  187 |         transition={{ duration: 0.5 }}
+  188 |       >
+  189 |         Tournoi gaming sous haute tension 🎮<br />
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:43:38.984] Browser ERROR   ./app/page.tsx:186:21
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         whileHover={{ opacity: 1 }}
+      |                     ^
+  187 |         transition={{ duration: 0.5 }}
+  188 |       >
+  189 |         Tournoi gaming sous haute tension 🎮<br />
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:43:59.333] Browser ERROR   ./app/page.tsx:186:7
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |       >
+      |       ^
+  187 |         Tournoi gaming sous haute tension 🎮<br />
+  188 |         Réunissant des joueurs prêts à tout pour la victoire.
+  189 |       </motion.p>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:43:59.986] Browser ERROR   ./app/page.tsx:186:7
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |       >
+      |       ^
+  187 |         Tournoi gaming sous haute tension 🎮<br />
+  188 |         Réunissant des joueurs prêts à tout pour la victoire.
+  189 |       </motion.p>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:11.213] Browser ERROR   ./app/page.tsx:186:17
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         Tournoi gaming sous haute tension 🎮<br />
+      |                 ^^^^^^
+  187 |         Réunissant des joueurs prêts à tout pour la victoire.
+  188 |       </motion.p>
+  189 |       <motion.button
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:11.988] Browser ERROR   ./app/page.tsx:186:17
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         Tournoi gaming sous haute tension 🎮<br />
+      |                 ^^^^^^
+  187 |         Réunissant des joueurs prêts à tout pour la victoire.
+  188 |       </motion.p>
+  189 |       <motion.button
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:43.875] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:43.983] Browser ERROR   ./app/page.tsx:186:17
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         Tournoi gaming sous haute tension 🎮<br />
+      |                 ^^^^^^
+  187 |         Réunissant des joueurs prêts à tout pour la victoire.
+  188 |       </motion.p>
+  189 |       <motion.button
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:44.084] Browser ERROR   ./app/page.tsx:186:17
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         Tournoi gaming sous haute tension 🎮<br />
+      |                 ^^^^^^
+  187 |         Réunissant des joueurs prêts à tout pour la victoire.
+  188 |       </motion.p>
+  189 |       <motion.button
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:44.084] Browser ERROR   ./app/page.tsx:186:17
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         Tournoi gaming sous haute tension 🎮<br />
+      |                 ^^^^^^
+  187 |         Réunissant des joueurs prêts à tout pour la victoire.
+  188 |       </motion.p>
+  189 |       <motion.button
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:44.987] Browser ERROR   ./app/page.tsx:186:17
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         Tournoi gaming sous haute tension 🎮<br />
+      |                 ^^^^^^
+  187 |         Réunissant des joueurs prêts à tout pour la victoire.
+  188 |       </motion.p>
+  189 |       <motion.button
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:49.756] Browser ERROR   ./app/page.tsx:186:21
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         Réunissant des joueurs prêts à tout pour la victoire.
+      |                     ^^^
+  187 |       </motion.p>
+  188 |       <motion.button
+  189 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:44:49.990] Browser ERROR   ./app/page.tsx:186:21
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         Réunissant des joueurs prêts à tout pour la victoire.
+      |                     ^^^
+  187 |       </motion.p>
+  188 |       <motion.button
+  189 |         className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:02.905] Browser ERROR   ./app/page.tsx:193:6
+Parsing ecmascript source code failed
+  191 |         Participer
+  192 |       </motion.button>
+> 193 |     </div>
+      |      ^^^^^
+  194 |   </motion.div>
+  195 |
+  196 |   {/* Top Right */}
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:02.983] Browser ERROR   ./app/page.tsx:193:6
+Parsing ecmascript source code failed
+  191 |         Participer
+  192 |       </motion.button>
+> 193 |     </div>
+      |      ^^^^^
+  194 |   </motion.div>
+  195 |
+  196 |   {/* Top Right */}
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:12.569] Browser ERROR   ./app/page.tsx:207:4
+Parsing ecmascript source code failed
+  205 |       </motion.button>
+  206 |     </div>
+> 207 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  208 |
+  209 |   {/* Bottom Left */}
+  210 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:12.986] Browser ERROR   ./app/page.tsx:207:4
+Parsing ecmascript source code failed
+  205 |       </motion.button>
+  206 |     </div>
+> 207 |   </motion.div>
+      |    ^^^^^^^^^^^^
+  208 |
+  209 |   {/* Bottom Left */}
+  210 |   <motion.div
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:36.201] Browser ERROR   ./app/page.tsx:191:18
+Parsing ecmascript source code failed
+  189 |       <motion.p
+  190 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 191 |         initial={{ opacity: 0 }}
+      |                  ^
+  192 |         whileHover={{ opacity: 1 }}
+  193 |         transition={{ duration: 0.5 }}
+  194 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:36.992] Browser ERROR   ./app/page.tsx:191:18
+Parsing ecmascript source code failed
+  189 |       <motion.p
+  190 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 191 |         initial={{ opacity: 0 }}
+      |                  ^
+  192 |         whileHover={{ opacity: 1 }}
+  193 |         transition={{ duration: 0.5 }}
+  194 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:50.130] Browser ERROR   ./app/page.tsx:186:9
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         🔥 Olympiades INPT
+      |         ^
+  187 |       </h2>
+  188 |       <motion.p
+  189 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+
+Unexpected character '🔥'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:45:50.980] Browser ERROR   ./app/page.tsx:186:9
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         🔥 Olympiades INPT
+      |         ^
+  187 |       </h2>
+  188 |       <motion.p
+  189 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+
+Unexpected character '🔥'
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:02.114] Browser ERROR   ./app/page.tsx:186:7
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |       </h2>
+      |       ^
+  187 |       <motion.p
+  188 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+  189 |         initial={{ opacity: 0 }}
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:02.114] Browser ERROR   ./app/page.tsx:186:8
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |       </h2>
+      |        ^^^^
+  187 |       <motion.p
+  188 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+  189 |         initial={{ opacity: 0 }}
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:02.983] Browser ERROR   ./app/page.tsx:186:7
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |       </h2>
+      |       ^
+  187 |       <motion.p
+  188 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+  189 |         initial={{ opacity: 0 }}
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:02.983] Browser ERROR   ./app/page.tsx:186:8
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |       </h2>
+      |        ^^^^
+  187 |       <motion.p
+  188 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+  189 |         initial={{ opacity: 0 }}
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:22.981] Browser ERROR   ./app/page.tsx:197:21
+Parsing ecmascript source code failed
+  195 |       <motion.button
+  196 |         className="mt-4 sm:mt-6 px-6 py-2 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 197 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  198 |         transition={{ duration: 0.3 }}
+  199 |       >
+  200 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:22.982] Browser ERROR   ./app/page.tsx:197:21
+Parsing ecmascript source code failed
+  195 |       <motion.button
+  196 |         className="mt-4 sm:mt-6 px-6 py-2 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
+> 197 |         whileHover={{ scale: 1.05 }}
+      |                     ^
+  198 |         transition={{ duration: 0.3 }}
+  199 |       >
+  200 |         Participer
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:31.208] Browser ERROR   ./app/page.tsx:187:18
+Parsing ecmascript source code failed
+  185 | }
+  186 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 187 |         initial={{ opacity: 0 }}
+      |                  ^
+  188 |         whileHover={{ opacity: 1 }}
+  189 |         transition={{ duration: 0.5 }}
+  190 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:31.247] Browser ERROR   ./app/page.tsx:187:18
+Parsing ecmascript source code failed
+  185 | }
+  186 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 187 |         initial={{ opacity: 0 }}
+      |                  ^
+  188 |         whileHover={{ opacity: 1 }}
+  189 |         transition={{ duration: 0.5 }}
+  190 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:32.387] Server  ERROR   ⨯ ./app/page.tsx:187:18
+Parsing ecmascript source code failed
+  185 | }
+  186 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 187 |         initial={{ opacity: 0 }}
+      |                  ^
+  188 |         whileHover={{ opacity: 1 }}
+  189 |         transition={{ duration: 0.5 }}
+  190 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:46:32.512] Browser ERROR   uncaughtError: Error: ./app/page.tsx:187:18
+Parsing ecmascript source code failed
+  185 | }
+  186 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 187 |         initial={{ opacity: 0 }}
+      |                  ^
+  188 |         whileHover={{ opacity: 1 }}
+  189 |         transition={{ duration: 0.5 }}
+  190 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:46:32.657] Browser ERROR   ./app/page.tsx:187:18
+Parsing ecmascript source code failed
+  185 | }
+  186 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 187 |         initial={{ opacity: 0 }}
+      |                  ^
+  188 |         whileHover={{ opacity: 1 }}
+  189 |         transition={{ duration: 0.5 }}
+  190 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:32.657] Browser ERROR   ./app/page.tsx:187:18
+Parsing ecmascript source code failed
+  185 | }
+  186 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 187 |         initial={{ opacity: 0 }}
+      |                  ^
+  188 |         whileHover={{ opacity: 1 }}
+  189 |         transition={{ duration: 0.5 }}
+  190 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:32.981] Browser ERROR   ./app/page.tsx:187:18
+Parsing ecmascript source code failed
+  185 | }
+  186 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 187 |         initial={{ opacity: 0 }}
+      |                  ^
+  188 |         whileHover={{ opacity: 1 }}
+  189 |         transition={{ duration: 0.5 }}
+  190 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:32.981] Browser ERROR   ./app/page.tsx:187:18
+Parsing ecmascript source code failed
+  185 | }
+  186 |         className="mt-4 sm:mt-10 text-white text-lg sm:text-2xl leading-relaxed opacity-0 group-hover:opacity-100"
+> 187 |         initial={{ opacity: 0 }}
+      |                  ^
+  188 |         whileHover={{ opacity: 1 }}
+  189 |         transition={{ duration: 0.5 }}
+  190 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:39.348] Browser ERROR   ./app/page.tsx:186:18
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         initial={{ opacity: 0 }}
+      |                  ^
+  187 |         whileHover={{ opacity: 1 }}
+  188 |         transition={{ duration: 0.5 }}
+  189 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:39.985] Browser ERROR   ./app/page.tsx:186:18
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |         initial={{ opacity: 0 }}
+      |                  ^
+  187 |         whileHover={{ opacity: 1 }}
+  188 |         transition={{ duration: 0.5 }}
+  189 |       >
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:49.501] Browser ERROR   ./app/page.tsx:187:21
+Parsing ecmascript source code failed
+  185 | }
+  186 |
+> 187 |         transition={{ duration: 0.3 }}
+      |                     ^
+  188 |       >
+  189 |         Participer
+  190 |       </motion.button>
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:49.982] Browser ERROR   ./app/page.tsx:187:21
+Parsing ecmascript source code failed
+  185 | }
+  186 |
+> 187 |         transition={{ duration: 0.3 }}
+      |                     ^
+  188 |       >
+  189 |         Participer
+  190 |       </motion.button>
+
+Unexpected token `{`. Expected identifier, string literal, numeric literal or [ for the computed key
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:57.327] Browser ERROR   ./app/page.tsx:186:7
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |       >
+      |       ^
+  187 |         Participer
+  188 |       </motion.button>
+  189 |     </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:57.327] Browser ERROR   ./app/page.tsx:188:8
+Parsing ecmascript source code failed
+  186 |       >
+  187 |         Participer
+> 188 |       </motion.button>
+      |        ^^^^^^^^^^^^^^^
+  189 |     </div>
+  190 |   </motion.div>
+  191 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:57.990] Browser ERROR   ./app/page.tsx:186:7
+Parsing ecmascript source code failed
+  184 |   );
+  185 | }
+> 186 |       >
+      |       ^
+  187 |         Participer
+  188 |       </motion.button>
+  189 |     </div>
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:46:57.990] Browser ERROR   ./app/page.tsx:188:8
+Parsing ecmascript source code failed
+  186 |       >
+  187 |         Participer
+> 188 |       </motion.button>
+      |        ^^^^^^^^^^^^^^^
+  189 |     </div>
+  190 |   </motion.div>
+  191 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:47:15.056] Server  LOG     ✓ Compiled in 63ms
+[00:47:15.587] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:28.729] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:48:12.360] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:48:12.360] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:48:26.501] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:48:32.341] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:48:41.650] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:48:45.721] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:48:52.165] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:50:53.796] Server  LOG     ✓ Compiled in 304ms
+[00:50:54.599] Server  LOG     ✓ Compiled in 130ms
+[00:51:12.825] Server  LOG     ✓ Compiled in 46ms
+[00:51:21.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:21.396] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:51:35.635] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:35.784] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:54:13.885] Server  LOG     ✓ Compiled in 58ms
+[00:54:15.020] Server  LOG     ✓ Compiled in 90ms
+[00:55:13.754] Server  LOG     ✓ Compiled in 133ms
+[00:55:31.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:55:32.059] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:56:00.648] Server  LOG     ✓ Compiled in 185ms
+[00:56:01.914] Server  LOG     ✓ Compiled in 124ms
+[00:56:40.636] Server  LOG     ✓ Compiled in 84ms
+[00:56:47.797] Server  LOG     ✓ Compiled in 111ms
+[00:57:34.961] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:35.109] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:57:42.911] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:43.066] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:57:45.909] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:47.507] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:47.650] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:57:53.505] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:38.090] Server  LOG     ✓ Compiled in 47ms
+[00:59:43.566] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:59:44.839] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:59:45.441] Server  LOG     ✓ Compiled in 85ms
+[00:59:49.178] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:59:53.891] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:59:55.233] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:55.402] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:59:57.331] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:59.196] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:59.356] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:00:20.212] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:20.361] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:00:26.255] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:00:26.404] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:00:28.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:41.759] Server  LOG     ✓ Compiled in 96ms
+[01:02:43.388] Server  LOG     ✓ Compiled in 233ms
+[01:02:54.418] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:02:54.570] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:03:02.184] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[01:03:03.246] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[01:03:32.589] Server  LOG     ✓ Compiled in 72ms
+[01:03:35.057] Server  LOG     ✓ Compiled in 147ms
+[01:04:04.906] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:06.978] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:07.126] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:04:09.236] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:09.395] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:04:32.107] Server  LOG     ✓ Compiled in 141ms
+[01:06:26.119] Server  LOG     ✓ Compiled in 169ms
+[01:06:53.995] Server  LOG     ✓ Compiled in 140ms
+[01:06:54.455] Server  LOG     ✓ Compiled in 0ms
+[01:06:54.932] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:07.383] Server  LOG     ✓ Compiled in 56ms
+[01:08:09.187] Server  LOG     ✓ Compiled in 160ms
+[01:09:31.922] Server  LOG     ✓ Compiled in 143ms
+[01:09:50.164] Server  LOG     ✓ Compiled in 58ms
+[01:10:48.592] Server  LOG     ✓ Compiled in 105ms
+[01:11:01.592] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:11:01.787] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:11:09.227] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:11:09.387] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:11:40.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:11:41.124] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:11:42.772] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:11:42.920] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:13:48.528] Server  LOG     ✓ Compiled in 73ms
+[01:13:49.219] Server  LOG     ✓ Compiled in 133ms
+[01:13:49.891] Server  LOG     ✓ Compiled in 76ms
+[01:19:52.054] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[01:19:54.777] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[01:19:56.005] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[01:21:18.943] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[01:21:20.735] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:21:20.875] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
