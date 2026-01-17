@@ -100,7 +100,7 @@ export default function Home() {
         Tournoi gaming sous haute tension 🎮<br />
         Réunissant des joueurs prêts à tout pour la victoire.
       </motion.p>
-      <a href="/inscription">
+      <a href="/evenements/bizu-cup">
         <motion.button
           className="mt-4 sm:mt-6 px-8 py-3 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
           whileHover={{ scale: 1.05 }}
@@ -129,7 +129,7 @@ export default function Home() {
         Événement e-sport majeur 🔥<br />
         Plusieurs écoles s’affrontent dans des matchs intenses et compétitifs.
       </motion.p>
-      <a href="/inscription">
+      <a href="/evenements/olympiades">
         <motion.button
           className="mt-4 sm:mt-6 px-6 py-2 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
           whileHover={{ scale: 1.05 }}
@@ -158,7 +158,7 @@ export default function Home() {
         Soirée chill & fun pour les membres et étudiants de l&apos;INPT:<br />
         Games, vibes et détente.
       </motion.p>
-      <a href="/inscription">
+      <a href="/evenements/gamenight">
         <motion.button
           className="mt-4 sm:mt-6 px-6 py-2 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
           whileHover={{ scale: 1.05 }}
@@ -187,7 +187,7 @@ export default function Home() {
         Game Dev Sessions 🚀<br />
         Découvrir et apprendre les bases du game development.
       </motion.p>
-      <a href="/inscription">
+      <a href="/evenements/gamedev">
         <motion.button
           className="mt-4 sm:mt-6 px-6 py-2 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider opacity-0 group-hover:opacity-100"
           whileHover={{ scale: 1.05 }}

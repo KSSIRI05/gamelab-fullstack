@@ -14,7 +14,8 @@ export default function Events() {
       date: "15 Mars 2026",
       description: "Tournoi e-sport majeur avec des équipes de toute la région",
       status: "Inscriptions ouvertes",
-      color: "from-red-500 to-orange-500"
+      color: "from-red-500 to-orange-500",
+      link: "/evenements/bizu-cup"
     },
     {
       id: 2,
@@ -22,7 +23,8 @@ export default function Events() {
       date: "22 Avril 2026",
       description: "Compétition inter-écoles avec plusieurs jeux",
       status: "Bientôt disponible",
-      color: "from-orange-500 to-yellow-500"
+      color: "from-orange-500 to-yellow-500",
+      link: "/evenements/olympiades"
     },
     {
       id: 3,
@@ -30,7 +32,8 @@ export default function Events() {
       date: "Tous les vendredis",
       description: "Soirées gaming détente pour tous les membres",
       status: "Événement récurrent",
-      color: "from-green-500 to-teal-500"
+      color: "from-green-500 to-teal-500",
+      link: "/evenements/gamenight"
     },
   ];
 
@@ -120,9 +123,11 @@ export default function Events() {
                   <span>{event.date}</span>
                 </div>
                 <p className="text-gray-300 mb-4">{event.description}</p>
-                <button className="w-full px-6 py-2 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider">
-                  En savoir plus
-                </button>
+                <a href={event.link}>
+                  <button className="w-full px-6 py-2 border-2 border-white bg-transparent hover:bg-white hover:text-black text-white font-semibold rounded transition-all duration-300 text-sm uppercase tracking-wider">
+                    Participer
+                  </button>
+                </a>
               </motion.div>
             ))}
           </div>

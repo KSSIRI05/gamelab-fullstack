@@ -54,6 +54,42 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
   type __Unused = __Check
 }
 
+// Validate ../../../app/evenements/bizu-cup/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/evenements/bizu-cup">> = Specific
+  const handler = {} as typeof import("../../../app/evenements/bizu-cup/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/evenements/gamedev/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/evenements/gamedev">> = Specific
+  const handler = {} as typeof import("../../../app/evenements/gamedev/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/evenements/gamenight/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/evenements/gamenight">> = Specific
+  const handler = {} as typeof import("../../../app/evenements/gamenight/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../../app/evenements/olympiades/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/evenements/olympiades">> = Specific
+  const handler = {} as typeof import("../../../app/evenements/olympiades/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../../app/events/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/events">> = Specific
@@ -67,15 +103,6 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   type __IsExpected<Specific extends AppPageConfig<"/gallery">> = Specific
   const handler = {} as typeof import("../../../app/gallery/page.js")
-  type __Check = __IsExpected<typeof handler>
-  // @ts-ignore
-  type __Unused = __Check
-}
-
-// Validate ../../../app/inscription/page.tsx
-{
-  type __IsExpected<Specific extends AppPageConfig<"/inscription">> = Specific
-  const handler = {} as typeof import("../../../app/inscription/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check
