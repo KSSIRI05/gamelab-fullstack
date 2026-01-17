@@ -1,590 +1,253 @@
-[00:00:00.735] Server  LOG     ✓ Ready in 526ms
-[00:00:06.128] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:06.231] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:00:01.396] Server  LOG     ✓ Ready in 995ms
+[00:00:06.513] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.773] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:00:12.435] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:00:13.527] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:02:28.710] Server  LOG     ✓ Compiled in 1189ms
+[00:02:32.811] Server  LOG     ✓ Compiled in 40ms
+[00:03:06.697] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:05:00.949] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:05:56.319] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:05:59.297] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:06:00.430] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:00.570] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:00:30.956] Server  LOG     ✓ Compiled in 16ms
-[00:15:42.630] Server  LOG     ✓ Compiled in 189ms
-[00:16:30.950] Server  ERROR   ⨯ TypeError: useRef only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/react-client-hook-in-server-component
-[00:16:31.066] Browser ERROR   uncaughtError: TypeError: useRef only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/react-client-hook-in-server-component
-[00:16:50.429] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:16:50.506] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:16:50.611] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:08:53.245] Server  LOG     ✓ Compiled in 90ms
+[00:08:54.370] Server  LOG     ✓ Compiled in 68ms
+[00:09:53.151] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:53.293] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:19:25.524] Server  LOG     ✓ Compiled in 13ms
-[00:19:38.357] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:38.462] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:10:02.702] Server  LOG     ✓ Compiled in 72ms
+[00:10:04.458] Server  LOG     ✓ Compiled in 85ms
+[00:10:04.995] Server  LOG     ✓ Compiled in 66ms
+[00:10:07.493] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:07.644] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:20:16.348] Server  LOG     ✓ Compiled in 19ms
-[00:20:24.520] Server  LOG     ✓ Compiled in 11ms
-[00:20:32.762] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:32.864] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:10:35.242] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:35.397] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:21:03.159] Server  LOG     ✓ Compiled in 13ms
-[00:21:10.082] Server  LOG     ✓ Compiled in 17ms
-[00:21:16.770] Server  LOG     ✓ Compiled in 12ms
-[00:21:20.241] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:20.349] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:10:38.766] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:38.929] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:24:44.849] Server  LOG     ✓ Compiled in 14ms
-[00:26:39.928] Server  LOG     ✓ Compiled in 15ms
-[00:26:40.043] Browser ERROR   ./app/page.tsx:9:20
-Ecmascript file had an error
-   7 | export default function Home() {
-   8 |
->  9 |   const orbitron = Orbitron({
-     |                    ^^^^^^^^
-  10 |   subsets: ["latin"],
-  11 |   weight: ["400", "600", "700"],
-  12 | });
-
-Font loaders must be called and assigned to a const in the module scope
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:27:20.111] Browser ERROR   ./app/page.tsx:9:20
-Ecmascript file had an error
-   7 | export default function Home() {
-   8 |
->  9 |   const orbitron = Orbitron({
-     |                    ^^^^^^^^
-  10 |   subsets: ["latin"],
-  11 |   weight: ["400", "600", "700"],
-  12 | });
-
-Font loaders must be called and assigned to a const in the module scope
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:29:14.052] Browser ERROR   ./app/page.tsx:9:20
-Ecmascript file had an error
-   7 | export default function Home() {
-   8 |
->  9 |   const orbitron = Orbitron({
-     |                    ^^^^^^^^
-  10 |   subsets: ["latin"],
-  11 |   weight: ["400", "600", "700"],
-  12 | });
-
-Font loaders must be called and assigned to a const in the module scope
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:30:03.613] Server  LOG     ✓ Compiled in 12ms
-[00:30:16.380] Server  LOG     ✓ Compiled in 12ms
-[00:30:22.565] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:30:22.666] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:10:41.345] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:10:41.501] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:30:49.311] Server  LOG     ✓ Compiled in 13ms
-[00:32:16.166] Server  LOG     ✓ Compiled in 11ms
-[00:32:16.264] Browser ERROR   uncaughtError: ReferenceError: orbitron is not defined
-[00:33:16.617] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:33:16.677] Server  LOG     ✓ Compiled in 769ms
-[00:33:16.732] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:16.836] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:10:44.295] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:06.734] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:08.676] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:08.824] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:33:38.457] Server  LOG     ✓ Compiled in 16ms
-[00:33:40.994] Server  LOG     ✓ Compiled in 15ms
-[00:33:44.423] Server  LOG     ✓ Compiled in 14ms
-[00:33:52.610] Server  LOG     ✓ Compiled in 14ms
-[00:33:55.994] Server  LOG     ✓ Compiled in 17ms
-[00:33:58.584] Server  LOG     ✓ Compiled in 14ms
-[00:34:03.925] Server  LOG     ✓ Compiled in 15ms
-[00:34:09.378] Server  LOG     ✓ Compiled in 15ms
-[00:34:18.551] Server  LOG     ✓ Compiled in 12ms
-[00:34:19.518] Server  LOG     ✓ Compiled in 15ms
-[00:34:26.556] Server  LOG     ✓ Compiled in 19ms
-[00:35:48.145] Server  LOG     ✓ Compiled in 15ms
-[00:35:56.764] Server  LOG     ✓ Compiled in 13ms
-[00:36:05.421] Server  LOG     ✓ Compiled in 16ms
-[00:36:10.494] Server  LOG     ✓ Compiled in 12ms
-[00:36:15.565] Server  LOG     ✓ Compiled in 12ms
-[00:36:18.012] Server  LOG     ✓ Compiled in 12ms
-[00:36:31.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:31.716] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:11:15.481] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:17.236] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:17.372] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:36:41.279] Server  LOG     ✓ Compiled in 12ms
-[00:36:43.637] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:43.637] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:11:22.042] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:22.193] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:36:53.825] Server  LOG     ✓ Compiled in 18ms
-[00:36:57.296] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:36:57.402] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:11:24.699] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:52.001] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:52.155] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:37:03.010] Server  LOG     ✓ Compiled in 14ms
-[00:37:05.917] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:06.023] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:12:07.338] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:07.488] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:37:15.022] Server  LOG     ✓ Compiled in 18ms
-[00:37:18.172] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:18.281] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:12:51.130] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:53.815] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:55.397] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:56.768] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:30.878] Server  LOG     ✓ Compiled in 32ms
+[00:14:37.077] Server  LOG     ✓ Compiled in 26ms
+[00:14:49.763] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:49.918] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:37:41.930] Server  LOG     ✓ Compiled in 22ms
-[00:37:43.910] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:37:44.012] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:14:52.571] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:59.807] Server  LOG     ✓ Compiled in 57ms
+[00:20:00.952] Server  LOG     ✓ Compiled in 61ms
+[00:20:01.377] Server  LOG     ✓ Compiled in 58ms
+[00:20:11.091] Server  LOG     ✓ Compiled in 255ms
+[00:20:11.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:12.942] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:13.090] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:38:02.592] Server  LOG     ✓ Compiled in 18ms
-[00:38:24.467] Server  LOG     ✓ Compiled in 60ms
-[00:38:28.852] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:38:28.954] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:21:17.963] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:18.113] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:38:49.249] Server  LOG     ✓ Compiled in 34ms
-[00:38:50.021] Server  LOG     ✓ Compiled in 33ms
-[00:39:13.712] Server  LOG     ✓ Compiled in 17ms
-[00:39:16.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:39:16.943] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:22:34.207] Server  LOG     ✓ Compiled in 37ms
+[00:22:47.333] Server  LOG     ✓ Compiled in 67ms
+[00:22:51.331] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:22:51.625] Server  LOG     ✓ Compiled in 37ms
+[00:22:51.858] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:04.686] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:23:04.960] Server  LOG     ✓ Compiled in 36ms
+[00:23:05.135] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:21.586] Server  LOG     ✓ Compiled in 63ms
+[00:23:22.083] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:23:30.939] Server  LOG     ✓ Compiled in 311ms
+[00:23:58.689] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:58.834] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:40:30.895] Server  LOG     ✓ Compiled in 15ms
-[00:40:47.873] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:40:47.873] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:24:04.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:04.317] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:40:54.455] Server  LOG     ✓ Compiled in 14ms
-[00:40:57.467] Server  LOG     ✓ Compiled in 11ms
-[00:41:42.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:41:42.377] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:24:05.455] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:05.607] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:43:04.254] Server  LOG     ✓ Compiled in 19ms
-[00:46:06.912] Server  LOG     ✓ Compiled in 20ms
-[00:46:10.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:46:10.360] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:24:08.700] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:24:08.851] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:47:22.462] Server  LOG     ✓ Compiled in 16ms
-[00:47:38.815] Server  LOG     ✓ Compiled in 17ms
-[00:47:44.960] Server  LOG     ✓ Compiled in 12ms
-[00:47:46.951] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:47:46.951] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:25:06.517] Server  LOG     ✓ Compiled in 96ms
+[00:25:25.572] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:25:25.808] Server  LOG     ✓ Compiled in 51ms
+[00:25:25.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:05.239] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:48:06.927] Server  LOG     ✓ Compiled in 16ms
-[00:48:17.317] Server  LOG     ✓ Compiled in 14ms
-[00:48:22.031] Server  LOG     ✓ Compiled in 13ms
-[00:50:03.226] Server  LOG     ✓ Compiled in 12ms
-[00:50:14.507] Server  LOG     ✓ Compiled in 13ms
-[00:51:14.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:51:14.187] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:26:08.833] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:08.989] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:51:16.778] Server  LOG     ✓ Compiled in 14ms
-[00:51:16.888] Browser ERROR   ./app/page.tsx:41:16
-Parsing ecmascript source code failed
-  39 |         <section/>
-  40 |
-> 41 |       </header>
-     |                ^
-> 42 |     </div>
-     | ^^^^^
-  43 |   );
-  44 | }
-  45 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:53:39.556] Server  LOG     ✓ Compiled in 14ms
-[00:53:41.778] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:53:41.872] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:26:18.967] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:19.117] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:53:50.740] Server  LOG     ✓ Compiled in 12ms
-[00:53:52.844] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:53:52.844] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:26:57.907] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:58.062] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:53:58.149] Server  LOG     ✓ Compiled in 12ms
-[00:54:00.384] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:54:00.492] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:27:06.140] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:27:19.377] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:19.517] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:54:07.807] Server  LOG     ✓ Compiled in 14ms
-[00:54:43.930] Server  LOG     ✓ Compiled in 12ms
-[00:55:47.248] Server  LOG     ✓ Compiled in 16ms
-[00:55:52.780] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:55:52.780] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:27:30.601] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:30.743] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:56:31.039] Server  LOG     ✓ Compiled in 13ms
-[00:56:33.633] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:33.745] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:28:35.416] Server  LOG     ✓ Compiled in 57ms
+[00:30:05.974] Server  LOG     ✓ Compiled in 55ms
+[00:30:36.047] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:31:47.127] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:31:50.666] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:31:51.411] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:32:12.577] Server  LOG     ✓ Compiled in 85ms
+[00:32:28.939] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:32:29.221] Server  LOG     ✓ Compiled in 51ms
+[00:32:29.473] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:33.749] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:32:33.764] Server  LOG     ✓ Compiled in 41ms
+[00:32:34.133] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:38.410] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/context/AuthContext.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:32:38.582] Server  LOG     ✓ Compiled in 35ms
+[00:32:38.688] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:47.625] Server  LOG     ✓ Compiled in 82ms
+[00:33:00.456] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:33:03.344] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:33:58.026] Server  LOG     ✓ Compiled in 83ms
+[00:34:14.701] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:34:17.400] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:17.539] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:56:40.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:56:40.806] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:34:30.138] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:32.445] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:32.600] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:57:07.184] Server  LOG     ✓ Compiled in 12ms
-[00:57:10.772] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:57:10.772] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:34:37.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:16.017] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:16.160] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[00:57:59.620] Server  LOG     ✓ Compiled in 16ms
-[00:58:09.251] Server  LOG     ✓ Compiled in 13ms
-[00:58:12.884] Server  LOG     ✓ Compiled in 12ms
-[00:58:17.783] Server  LOG     ✓ Compiled in 15ms
-[00:58:20.948] Server  LOG     ✓ Compiled in 14ms
-[00:58:24.929] Server  LOG     ✓ Compiled in 17ms
-[00:58:48.546] Server  LOG     ✓ Compiled in 17ms
-[00:59:02.980] Server  LOG     ✓ Compiled in 15ms
-[00:59:34.723] Server  LOG     ✓ Compiled in 18ms
-[01:00:39.319] Server  LOG     ✓ Compiled in 19ms
-[01:00:59.579] Server  LOG     ✓ Compiled in 15ms
-[01:01:06.104] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:06.104] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:35:23.611] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:36:19.434] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:36:23.580] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:36:32.834] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:38:23.912] Server  LOG     ✓ Compiled in 164ms
+[00:38:38.464] Server  LOG     ✓ Compiled in 125ms
+[00:38:48.097] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:38:58.113] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:39:02.390] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:39:22.166] Server  LOG     ✓ Compiled in 69ms
+[00:39:36.301] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:39:37.456] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:40:23.687] Server  LOG     ✓ Compiled in 99ms
+[00:40:32.402] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:40:35.444] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:40:52.483] Server  LOG     ✓ Compiled in 131ms
+[00:41:00.426] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:41:10.007] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:42:46.669] Server  LOG     ✓ Compiled in 48ms
+[00:43:00.480] Browser LOG     Dropdown clicked, current state: false
+[00:43:16.073] Browser LOG     Dropdown clicked, current state: false
+[00:44:28.959] Server  LOG     ✓ Compiled in 108ms
+[00:44:34.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:34.503] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:01:15.405] Server  LOG     ✓ Compiled in 11ms
-[01:01:18.221] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:18.331] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:45:42.100] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:45:43.665] Server  ERROR   ⨯ ReferenceError: AuthButton is not defined
+[00:45:43.799] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:43.985] Browser ERROR   uncaughtError: ReferenceError: AuthButton is not defined
+[00:45:48.714] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:50.421] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:50.579] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:01:24.187] Server  LOG     ✓ Compiled in 12ms
-[01:01:26.719] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:26.822] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:45:59.281] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:59.454] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:01:39.961] Server  LOG     ✓ Compiled in 19ms
-[01:01:41.922] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:42.024] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:46:03.500] Server  ERROR   ⨯ ReferenceError: AuthButton is not defined
+[00:46:03.609] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:03.789] Browser ERROR   uncaughtError: ReferenceError: AuthButton is not defined
+[00:46:12.455] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:36.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:37.198] Server  ERROR   ⨯ ReferenceError: AuthButton is not defined
+[00:46:37.389] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:37.573] Browser ERROR   uncaughtError: ReferenceError: AuthButton is not defined
+[00:46:40.677] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:46.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:46:46.287] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:01:50.284] Server  LOG     ✓ Compiled in 11ms
-[01:28:40.772] Server  LOG     ✓ Compiled in 14ms
-[01:29:00.077] Server  LOG     ✓ Compiled in 12ms
-[01:29:06.819] Server  LOG     ✓ Compiled in 14ms
-[01:29:11.011] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:29:11.130] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:46:51.643] Server  LOG     ✓ Compiled in 235ms
+[00:47:05.606] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:47:07.563] Server  ERROR   ⨯ ReferenceError: AuthButton is not defined
+[00:47:07.681] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:07.871] Browser ERROR   uncaughtError: ReferenceError: AuthButton is not defined
+[00:47:10.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:11.837] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:11.989] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:29:40.894] Server  LOG     ✓ Compiled in 14ms
-[01:29:44.112] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:29:44.215] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:47:12.834] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:14.632] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:14.771] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:33:02.270] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:33:02.371] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:47:15.732] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:13.041] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:13.195] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:35:44.509] Server  LOG     ✓ Compiled in 21ms
-[01:35:44.610] Browser ERROR   ./app/page.tsx:46:11
-Parsing ecmascript source code failed
-  44 |
-  45 |
-> 46 |     </div>
-     |           ^
-> 47 |     </div>
-     | ^^^^^
-  48 |   );
-  49 | }
-  50 |
-
-Expected '</', got 'jsx text (
-    )'
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[01:36:40.378] Server  LOG     ✓ Compiled in 13ms
-[01:36:43.918] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:36:43.980] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:48:15.453] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:15.616] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:36:44.055] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:36:44.167] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+[00:51:55.798] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:51:58.070] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:52:17.981] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:20.029] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:52:22.555] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:52:23.683] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:16.110] Server  LOG     ✓ Compiled in 78ms
+[00:53:45.822] Server  LOG     ✓ Compiled in 56ms
+[00:54:06.664] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:54:10.374] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:54:16.023] Server  ERROR   ⨯ Error: The default export is not a React Component in "/team/not-found"
+[00:54:16.481] Server  ERROR   ⨯ Error: The default export is not a React Component in "/team/not-found"
+[00:54:16.499] Server  LOG     ✓ Compiled in 1343ms
+[00:54:17.803] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:27.215] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:54:30.789] Server  ERROR   React does not recognize the `allowTransparency` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `allowtransparency` instead. If you accidentally passed it from a parent component, remove it from the DOM element.
+[00:54:30.929] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:31.110] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:54:35.369] Server  LOG     ✓ Compiled in 315ms
+[00:54:35.574] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:54:49.686] Server  LOG     ✓ Compiled in 120ms
+[00:54:49.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:04.847] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:56:22.866] Browser ERROR   React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element. allowTransparency allowtransparency
+[00:57:40.455] Server  LOG     ✓ Compiled in 62ms
+[00:57:50.864] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:57:55.397] Server  LOG     ✓ Compiled in 45ms
+[00:57:58.336] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:58:14.264] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
+[00:58:16.539] Server  LOG     ✓ Compiled in 55ms
+[00:58:22.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:58:22.639] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:37:05.108] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:37:05.211] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:37:49.292] Server  LOG     ✓ Compiled in 16ms
-[01:37:52.759] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:37:52.864] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:37:59.528] Server  LOG     ✓ Compiled in 13ms
-[01:38:01.973] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:38:02.074] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:38:21.602] Server  LOG     ✓ Compiled in 15ms
-[01:38:33.967] Server  LOG     ✓ Compiled in 13ms
-[01:38:37.176] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:38:37.277] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:38:47.057] Server  LOG     ✓ Compiled in 13ms
-[01:38:47.159] Browser ERROR   ./app/page.tsx:41:6
-Parsing ecmascript source code failed
-  39 |         {/* Optional dark overlay */}
-  40 |         <div className="absolute inset-0 bg-black/60 -z-10" /></div>
-> 41 |     </div>
-     |      ^^^^^
-  42 |   );
-  43 | }
-  44 |
-
-Unterminated regexp literal
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[01:39:01.638] Server  LOG     ✓ Compiled in 12ms
-[01:39:03.292] Server  LOG     ✓ Compiled in 11ms
-[01:39:15.366] Server  LOG     ✓ Compiled in 12ms
-[01:39:18.769] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:39:18.769] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:39:26.398] Server  LOG     ✓ Compiled in 11ms
-[01:39:30.705] Server  LOG     ✓ Compiled in 16ms
-[01:39:30.809] Browser ERROR   ./app/page.tsx:42:1
-Parsing ecmascript source code failed
-  40 |     </div>
-  41 |   );
-> 42 | }
-     | ^
-  43 |
-
-Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[01:39:56.166] Server  LOG     ✓ Compiled in 12ms
-[01:40:09.146] Server  LOG     ✓ Compiled in 13ms
-[01:40:20.050] Server  LOG     ✓ Compiled in 13ms
-[01:40:59.673] Server  LOG     ✓ Compiled in 17ms
-[01:42:08.335] Server  LOG     ✓ Compiled in 23ms
-[01:42:26.233] Server  LOG     ✓ Compiled in 22ms
-[01:42:48.505] Server  LOG     ✓ Compiled in 13ms
-[01:42:51.663] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:42:51.765] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:43:05.657] Server  LOG     ✓ Compiled in 14ms
-[01:43:08.322] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:43:08.422] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:43:29.525] Server  LOG     ✓ Compiled in 12ms
-[01:43:32.594] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:43:32.699] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:43:45.632] Server  LOG     ✓ Compiled in 16ms
-[01:44:31.932] Server  LOG     ✓ Compiled in 13ms
-[01:44:37.250] Server  LOG     ✓ Compiled in 11ms
-[01:44:51.566] Server  LOG     ✓ Compiled in 17ms
-[01:45:06.987] Server  LOG     ✓ Compiled in 20ms
-[01:45:10.975] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:45:11.076] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:45:40.058] Server  LOG     ✓ Compiled in 12ms
-[01:45:42.883] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:45:42.964] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:46:16.882] Server  LOG     ✓ Compiled in 17ms
-[01:46:20.453] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:46:20.560] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:46:23.552] Server  LOG     ✓ Compiled in 14ms
-[01:46:30.409] Server  LOG     ✓ Compiled in 18ms
-[01:46:44.441] Server  LOG     ✓ Compiled in 12ms
-[01:46:54.005] Server  LOG     ✓ Compiled in 12ms
-[01:46:57.746] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:46:57.847] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:47:04.822] Server  LOG     ✓ Compiled in 14ms
-[01:47:07.916] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:47:08.017] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:47:15.962] Server  LOG     ✓ Compiled in 12ms
-[01:47:18.748] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:47:18.848] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:47:23.046] Server  LOG     ✓ Compiled in 17ms
-[01:47:50.021] Server  LOG     ✓ Compiled in 14ms
-[01:48:16.675] Server  LOG     ✓ Compiled in 14ms
-[01:48:32.014] Server  LOG     ✓ Compiled in 13ms
-[01:48:35.430] Server  LOG     ✓ Compiled in 16ms
-[01:48:54.089] Server  LOG     ✓ Compiled in 14ms
-[01:49:11.691] Server  LOG     ✓ Compiled in 16ms
-[01:52:28.546] Server  LOG     ✓ Compiled in 13ms
-[01:52:49.444] Server  LOG     ✓ Compiled in 18ms
-[01:53:00.854] Server  LOG     ✓ Compiled in 19ms
-[01:53:14.882] Server  LOG     ✓ Compiled in 16ms
-[01:53:36.563] Server  LOG     ✓ Compiled in 13ms
-[01:53:51.611] Server  LOG     ✓ Compiled in 12ms
-[01:54:33.896] Server  LOG     ✓ Compiled in 15ms
-[01:55:14.375] Server  LOG     ✓ Compiled in 12ms
-[01:55:35.177] Server  LOG     ✓ Compiled in 18ms
-[01:55:44.463] Server  LOG     ✓ Compiled in 16ms
-[01:55:51.536] Server  LOG     ✓ Compiled in 14ms
-[01:56:00.611] Server  LOG     ✓ Compiled in 12ms
-[01:57:01.901] Server  LOG     ✓ Compiled in 13ms
-[01:57:07.390] Server  LOG     ✓ Compiled in 14ms
-[01:57:19.629] Server  LOG     ✓ Compiled in 12ms
-[01:57:29.570] Server  LOG     ✓ Compiled in 12ms
-[01:57:45.081] Server  LOG     ✓ Compiled in 13ms
-[01:57:52.329] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:57:52.438] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[01:58:44.185] Server  LOG     ✓ Compiled in 12ms
-[01:58:54.810] Server  LOG     ✓ Compiled in 16ms
-[01:58:54.922] Browser ERROR   ./app/page.tsx:38:12
-Parsing ecmascript source code failed
-  36 |               <source src="/gamelab.mp4" type="video/mp4" />
-  37 |             </video>
-> 38 |           />
-     |            ^
-  39 |           </div>
-  40 |         <div>
-  41 |           Hellow World
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[01:59:05.458] Server  LOG     ✓ Compiled in 13ms
-[01:59:19.184] Server  LOG     ✓ Compiled in 13ms
-[01:59:50.080] Server  LOG     ✓ Compiled in 17ms
-[02:00:15.569] Server  LOG     ✓ Compiled in 13ms
-[02:00:27.813] Server  LOG     ✓ Compiled in 15ms
-[02:00:34.720] Server  LOG     ✓ Compiled in 14ms
-[02:01:08.101] Server  LOG     ✓ Compiled in 20ms
-[02:02:39.931] Server  LOG     ✓ Compiled in 19ms
-[02:02:54.932] Server  LOG     ✓ Compiled in 13ms
-[02:03:04.323] Server  LOG     ✓ Compiled in 17ms
-[02:03:12.953] Server  LOG     ✓ Compiled in 13ms
-[02:03:20.177] Server  LOG     ✓ Compiled in 13ms
-[02:03:32.923] Server  LOG     ✓ Compiled in 12ms
-[02:03:35.598] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:04:06.392] Server  LOG     ✓ Compiled in 16ms
-[02:04:15.938] Server  LOG     ✓ Compiled in 13ms
-[02:06:08.674] Server  LOG     ✓ Compiled in 14ms
-[02:06:19.874] Server  LOG     ✓ Compiled in 15ms
-[02:06:23.822] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:08:34.311] Server  LOG     ✓ Compiled in 33ms
-[02:08:38.400] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:09:21.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:10:23.617] Server  LOG     ✓ Compiled in 28ms
-[02:10:37.234] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:15:29.860] Server  LOG     ✓ Compiled in 34ms
-[02:17:37.818] Server  LOG     ✓ Compiled in 18ms
-[02:17:59.885] Server  LOG     ✓ Compiled in 18ms
-[02:18:08.710] Server  LOG     ✓ Compiled in 17ms
-[02:18:17.476] Server  LOG     ✓ Compiled in 11ms
-[02:18:20.582] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:18:20.582] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[02:18:30.882] Server  LOG     ✓ Compiled in 12ms
-[02:20:14.868] Server  LOG     ✓ Compiled in 14ms
-[02:20:31.088] Server  LOG     ✓ Compiled in 11ms
-[02:20:47.110] Server  LOG     ✓ Compiled in 12ms
-[02:20:51.576] Server  LOG     ✓ Compiled in 12ms
-[02:20:57.605] Server  LOG     ✓ Compiled in 12ms
-[02:21:19.011] Server  LOG     ✓ Compiled in 14ms
-[02:21:24.532] Server  LOG     ✓ Compiled in 16ms
-[02:22:09.053] Server  LOG     ✓ Compiled in 13ms
-[02:22:17.956] Server  LOG     ✓ Compiled in 13ms
-[02:22:23.465] Server  LOG     ✓ Compiled in 12ms
-[02:22:28.469] Server  LOG     ✓ Compiled in 16ms
-[02:22:47.266] Server  LOG     ✓ Compiled in 16ms
-[02:22:54.040] Server  LOG     ✓ Compiled in 16ms
-[02:22:59.147] Server  LOG     ✓ Compiled in 13ms
-[02:23:18.702] Server  LOG     ✓ Compiled in 17ms
-[02:23:33.198] Server  LOG     ✓ Compiled in 19ms
-[02:23:46.695] Server  LOG     ✓ Compiled in 19ms
-[02:23:55.385] Server  LOG     ✓ Compiled in 19ms
-[02:24:31.348] Server  LOG     ✓ Compiled in 16ms
-[02:24:51.798] Server  LOG     ✓ Compiled in 13ms
-[02:25:06.831] Server  LOG     ✓ Compiled in 13ms
-[02:25:27.528] Server  LOG     ✓ Compiled in 13ms
-[02:25:51.992] Server  LOG     ✓ Compiled in 15ms
-[02:25:55.329] Server  LOG     ✓ Compiled in 12ms
-[02:25:58.560] Server  LOG     ✓ Compiled in 13ms
-[02:26:04.272] Server  LOG     ✓ Compiled in 14ms
-[02:26:19.363] Server  LOG     ✓ Compiled in 13ms
-[02:26:31.312] Server  LOG     ✓ Compiled in 16ms
-[02:27:17.138] Server  LOG     ✓ Compiled in 18ms
-[02:27:35.304] Server  LOG     ✓ Compiled in 14ms
-[02:27:44.244] Server  LOG     ✓ Compiled in 13ms
-[02:27:48.402] Server  LOG     ✓ Compiled in 17ms
-[02:27:59.663] Server  LOG     ✓ Compiled in 13ms
-[02:28:18.421] Server  LOG     ✓ Compiled in 15ms
-[02:29:40.011] Server  LOG     ✓ Compiled in 14ms
-[02:30:01.951] Server  LOG     ✓ Compiled in 16ms
-[02:30:27.607] Server  LOG     ✓ Compiled in 16ms
-[02:30:48.390] Server  LOG     ✓ Compiled in 12ms
-[02:30:58.419] Server  LOG     ✓ Compiled in 13ms
-[02:31:07.888] Server  LOG     ✓ Compiled in 15ms
-[02:34:23.474] Server  LOG     ✓ Compiled in 220ms
-[02:34:36.233] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:34:36.341] Browser WARN    Image with src "/logo.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
-[02:36:36.821] Server  LOG     ✓ Compiled in 24ms
-[02:37:57.053] Server  LOG     ✓ Compiled in 15ms
-[02:38:14.836] Server  LOG     ✓ Compiled in 15ms
-[02:38:21.288] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:39:16.646] Server  LOG     ✓ Compiled in 14ms
-[02:39:24.741] Server  LOG     ✓ Compiled in 14ms
-[02:39:38.725] Server  LOG     ✓ Compiled in 27ms
-[02:41:57.791] Server  LOG     ✓ Compiled in 15ms
-[02:42:56.515] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:42:56.673] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:43:23.098] Server  LOG     ✓ Compiled in 20ms
-[02:43:30.658] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:44:19.378] Server  LOG     ✓ Compiled in 18ms
-[02:44:22.570] Server  LOG     ✓ Compiled in 16ms
-[02:44:24.892] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:44:46.975] Server  LOG     ✓ Compiled in 14ms
-[02:45:03.250] Server  LOG     ✓ Compiled in 18ms
-[02:45:24.220] Server  LOG     ✓ Compiled in 23ms
-[02:45:33.840] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:45:44.730] Server  LOG     ✓ Compiled in 15ms
-[02:46:00.897] Server  LOG     ✓ Compiled in 20ms
-[02:46:04.256] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:46:09.147] Server  LOG     ✓ Compiled in 14ms
-[02:46:26.685] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:55:20.213] Server  LOG     ✓ Compiled in 54ms
-[02:55:25.183] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:03:00.133] Server  LOG     ✓ Compiled in 288ms
-[03:08:23.659] Server  LOG     ✓ Compiled in 35ms
-[03:13:54.417] Server  LOG     ✓ Compiled in 316ms
-[03:18:11.420] Server  LOG     ✓ Compiled in 97ms
-[03:18:12.313] Browser ERROR   uncaughtError: Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-
-Check the render method of `Home`.
-[03:19:43.749] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[03:19:43.959] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:20:39.234] Server  LOG     ✓ Compiled in 26ms
-[03:20:47.964] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:20:48.405] Browser ERROR   unhandledRejection: NotAllowedError: play() failed because the user didn't interact with the document first.
-[03:20:48.405] Browser ERROR   unhandledRejection: NotAllowedError: play() failed because the user didn't interact with the document first.
-[03:20:48.405] Browser ERROR   unhandledRejection: NotAllowedError: play() failed because the user didn't interact with the document first.
-[03:20:48.405] Browser ERROR   unhandledRejection: NotAllowedError: play() failed because the user didn't interact with the document first.
-[03:21:26.771] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:21:32.779] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:22:28.927] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[03:23:56.569] Server  LOG     ✓ Compiled in 24ms
-[03:23:56.642] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document.
-[03:24:02.393] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:59:01.107] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22
