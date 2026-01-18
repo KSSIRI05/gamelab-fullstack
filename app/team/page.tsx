@@ -30,7 +30,7 @@ export default function Team() {
       name: "Mohammed Kssiri",
       role: "Trésorier",
       description: "Finances - Gestion du budget et des dépenses",
-      image: "/Tresorier.jpeg"
+      image: "/TRESORIER.jpeg"
     },
     {
       id: 4,

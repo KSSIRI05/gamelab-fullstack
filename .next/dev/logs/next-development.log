@@ -1,0 +1,9 @@
+[00:00:00.895] Server  LOG     ✓ Ready in 657ms
+[00:00:05.522] Server  LOG     ○ Compiling / ...
+[00:00:07.171] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.513] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document.
+[00:00:17.435] Browser ERROR   Erreur lors du chargement des inscriptions: {}
+[00:00:17.435] Browser ERROR   Erreur lors du chargement des inscriptions: {}
+[00:00:23.819] Browser ERROR   unhandledRejection: AbortError: The play() request was interrupted because the media was removed from the document.
+[00:00:23.819] Browser ERROR   Erreur lors du chargement des inscriptions: {}
+[00:00:23.819] Browser ERROR   Erreur lors du chargement des inscriptions: {}
