@@ -162,10 +162,8 @@ cython_debug/
 .vscode/
 
 # FastAPI specific
-*.db
 *.sqlite
 *.sqlite3
-gamelab.db
 test.db
 test_*.db
 
