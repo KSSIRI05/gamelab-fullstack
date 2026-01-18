@@ -21,7 +21,7 @@ async def get_events(db: Session = Depends(get_db)):
         date=event.date,
         location=event.location,
         max_participants=event.max_participants,
-        current_participants=len(event.registrations),
+        participants_count=len(event.registrations),
         image_url=event.image_url,
         created_at=event.created_at
     ) for event in events]
@@ -39,7 +39,7 @@ async def get_event(event_id: int, db: Session = Depends(get_db)):
         date=event.date,
         location=event.location,
         max_participants=event.max_participants,
-        current_participants=len(event.registrations),
+        participants_count=len(event.registrations),
         image_url=event.image_url,
         created_at=event.created_at
     )
@@ -151,3 +151,23 @@ async def get_event_participants(
         })
     
     return participants
+
+@router.get("/registrations")
+async def get_user_registrations(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db)
+):
+    """Get all event registrations for the current user"""
+    registrations = db.query(EventRegistration).filter(
+        EventRegistration.user_id == current_user.id
+    ).all()
+    
+    return [
+        {
+            "id": reg.id,
+            "user_id": reg.user_id,
+            "event_id": reg.event_id,
+            "registered_at": reg.registered_at
+        }
+        for reg in registrations
+    ]

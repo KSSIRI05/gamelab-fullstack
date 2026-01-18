@@ -8,16 +8,105 @@ import Navbar from '../../components/Navbar';
 import AuthButton from '../../components/AuthButton';
 import { useAuth } from '../../context/AuthContext';
 import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import apiService from '../../../lib/api';
 
 export default function Olympiades() {
   const { isAuthenticated } = useAuth();
   const router = useRouter();
+  const [isRegistering, setIsRegistering] = useState(false);
+  const [isRegistered, setIsRegistered] = useState(false);
+  const [eventId, setEventId] = useState<number | null>(null);
 
-  const handleInscription = () => {
-    if (isAuthenticated) {
-      alert('Inscription confirmée! Nous vous contacterons bientôt.');
-    } else {
+  useEffect(() => {
+    const loadEventData = async () => {
+      try {
+        const events = await apiService.getEvents();
+        const olympiadesEvent = events.find(event => 
+          event.title.toLowerCase().includes('olympiades')
+        );
+        
+        if (olympiadesEvent) {
+          setEventId(olympiadesEvent.id);
+        } else {
+          console.warn('Événement Olympiades non trouvé');
+        }
+      } catch (error) {
+        console.error('Erreur lors du chargement de l\'événement:', error);
+      }
+    };
+
+    loadEventData();
+  }, []);
+
+  useEffect(() => {
+    const loadUserRegistrations = async () => {
+      if (!isAuthenticated || !eventId) {
+        setIsRegistered(false);
+        return;
+      }
+
+      try {
+        const registrations = await apiService.getUserRegistrations();
+        const isAlreadyRegistered = registrations.some(reg => reg.event_id === eventId);
+        setIsRegistered(isAlreadyRegistered);
+      } catch (error) {
+        console.error('Erreur lors du chargement des inscriptions:', error);
+        setIsRegistered(false);
+      }
+    };
+
+    loadUserRegistrations();
+  }, [isAuthenticated, eventId]);
+
+  const handleInscription = async () => {
+    if (!isAuthenticated) {
       router.push('/login?returnUrl=/evenements/olympiades');
+      return;
+    }
+
+    if (!eventId) {
+      alert('Événement non trouvé. Veuillez réessayer.');
+      return;
+    }
+
+    if (isRegistering) {
+      return;
+    }
+
+    try {
+      setIsRegistering(true);
+      
+      if (isRegistered) {
+        await apiService.unregisterFromEvent(eventId);
+        setIsRegistered(false);
+        alert('Désinscription réussie !');
+      } else {
+        await apiService.registerForEvent(eventId);
+        setIsRegistered(true);
+        alert('Inscription confirmée ! Nous vous contacterons bientôt.');
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'inscription/désinscription:', error);
+      
+      if (error instanceof Error && error.message.includes('Already registered')) {
+        setIsRegistered(true);
+        alert('Vous êtes déjà inscrit à cet événement. Cliquez à nouveau pour vous désinscrire.');
+        return;
+      }
+      
+      const errorMessage = error instanceof Error ? error.message : 'Une erreur est survenue';
+      alert(`Erreur: ${errorMessage}`);
+      
+      try {
+        const registrations = await apiService.getUserRegistrations();
+        const isAlreadyRegistered = registrations.some(reg => reg.event_id === eventId);
+        setIsRegistered(isAlreadyRegistered);
+      } catch (reloadError) {
+        console.error('Erreur lors du rechargement de l\'état:', reloadError);
+      }
+    } finally {
+      setIsRegistering(false);
     }
   };
 
@@ -171,14 +260,31 @@ export default function Olympiades() {
             <div className="text-center">
               <motion.button
                 onClick={handleInscription}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-12 py-4 bg-gradient-to-r from-orange-600 to-yellow-600 hover:from-orange-700 hover:to-yellow-700 text-white font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-xl"
+                disabled={isRegistering || !eventId}
+                whileHover={{ scale: isRegistering ? 1 : 1.05 }}
+                whileTap={{ scale: isRegistering ? 1 : 0.95 }}
+                className={`px-12 py-4 font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-xl ${
+                  isRegistering
+                    ? 'bg-gray-600 cursor-not-allowed'
+                    : isRegistered
+                    ? 'bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white'
+                    : 'bg-gradient-to-r from-orange-600 to-yellow-600 hover:from-orange-700 hover:to-yellow-700 text-white'
+                }`}
               >
-                S'inscrire maintenant
+                {isRegistering
+                  ? 'Traitement...'
+                  : isRegistered
+                  ? 'Se désinscrire'
+                  : 'S\'inscrire maintenant'
+                }
               </motion.button>
               <p className="text-gray-400 mt-4">
-                Inscription par équipe - Ouvert à toutes les écoles
+                {isAuthenticated 
+                  ? isRegistered 
+                    ? 'Vous êtes inscrit à cet événement'
+                    : 'Inscription par équipe - Ouvert à toutes les écoles'
+                  : 'Connectez-vous pour vous inscrire'
+                }
               </p>
             </div>
           </motion.div>

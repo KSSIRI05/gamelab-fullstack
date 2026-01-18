@@ -29,10 +29,7 @@ export default function AuthButton() {
       <div className="flex items-center gap-3">
         <div className="flex items-center gap-2 bg-purple-800/50 px-4 py-2 rounded-lg">
           <FaUser className="text-white" />
-          <span className="text-white font-semibold">{user.prenom} {user.nom}</span>
-          {user.isINPTStudent && (
-            <span className="text-xs bg-green-500 text-white px-2 py-1 rounded-full">INPT</span>
-          )}
+          <span className="text-white font-semibold">{user.name}</span>
         </div>
         <button
           onClick={handleLogout}

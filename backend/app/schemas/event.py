@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 from typing import Optional, List
 
@@ -16,10 +16,9 @@ class EventCreate(EventBase):
 class EventResponse(EventBase):
     id: int
     created_at: datetime
-    current_participants: int = 0
+    participants_count: int = 0
     
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 class EventUpdate(BaseModel):
     title: Optional[str] = None
@@ -34,5 +33,4 @@ class Event(EventBase):
     created_at: datetime
     current_participants: int = 0
     
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
