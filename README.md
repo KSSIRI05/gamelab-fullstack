@@ -2,6 +2,20 @@
 
 Bienvenue dans le projet web du club gaming **GameLab INPT**! Site officiel et plateforme d'événements pour les passionnés de jeux vidéo.
 
+## Rapport du projet 
+
+Ce depot correspond au projet d'examen.
+
+Membres du groupe:
+- LACHGUER Mohamed Yassine
+- Abderrafia Haddoumi
+- Mohammed KSSIRI
+- Taha Ibourk-El-Idrissi
+
+Images Docker:
+- abdouhad/gamelab-frontend:latest
+- abdouhad/gamelab-backend:latest
+
 ## 📝 Description
 
 GameLab est une application fullstack moderne pour:
@@ -107,6 +121,20 @@ Pour plus de détails, voir [docker/README.md](docker/README.md) 🐳
 ├── jest.config.js         # Config Jest
 └── README.md              # Ce fichier
 ```
+
+## UML Modeling
+
+PlantUML source files:
+- docs/uml/use-case.puml
+- docs/uml/class-diagram.puml
+- docs/uml/sequence-login.puml
+- docs/uml/sequence-event-registration.puml
+
+Rendered diagrams:
+![Use Case Diagram](docs/uml/rendered/use-case.png)
+![Class Diagram](docs/uml/rendered/class-diagram.png)
+![Sequence Diagram - Login](docs/uml/rendered/sequence-login.png)
+![Sequence Diagram - Event Registration](docs/uml/rendered/sequence-event-registration.png)
 
 ## ⚙️ Configuration
 

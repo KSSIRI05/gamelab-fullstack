@@ -1,0 +1,53 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class User {
+  +id: int
+  +name: string
+  +email: string
+  +hashed_password: string
+  +created_at: datetime
+}
+
+class Event {
+  +id: int
+  +title: string
+  +description: text
+  +date: datetime
+  +location: string
+  +max_participants: int
+  +image_url: string
+  +created_at: datetime
+  +current_participants(): int
+}
+
+class EventRegistration {
+  +id: int
+  +user_id: int
+  +event_id: int
+  +registered_at: datetime
+}
+
+class AuthService {
+  +get_password_hash(password): string
+  +verify_password(password, hash): bool
+  +create_access_token(data, expires_delta): string
+  +get_current_user(token): User
+}
+
+class AuthRouter
+class EventsRouter
+class DatabaseSession
+
+User "1" -- "0..*" EventRegistration
+Event "1" -- "0..*" EventRegistration
+
+AuthRouter ..> AuthService
+AuthRouter ..> User
+EventsRouter ..> Event
+EventsRouter ..> EventRegistration
+EventsRouter ..> AuthService
+AuthRouter ..> DatabaseSession
+EventsRouter ..> DatabaseSession
+@enduml
