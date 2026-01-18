@@ -36,8 +36,13 @@ app.dependency_overrides[get_db] = override_get_db
 @pytest.fixture(scope="function")
 def client():
     # Nettoyer les données avant chaque test
-    for table in reversed(Base.metadata.sorted_tables):
-        engine.execute(table.delete())
+    db = TestingSessionLocal()
+    try:
+        for table in reversed(Base.metadata.sorted_tables):
+            db.execute(table.delete())
+        db.commit()
+    finally:
+        db.close()
     
     with TestClient(app) as test_client:
         yield test_client
