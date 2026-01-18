@@ -1,11 +1,11 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import Login from '../app/login/page';
-import { useAuth } from '../app/context/AuthContext';
+import Login from '../../app/login/page';
+import { useAuth } from '../../app/context/AuthContext';
 import { useRouter } from 'next/navigation';
 
-jest.mock('../app/components/Navbar', () => () => <nav data-testid="navbar" />);
+jest.mock('../../app/components/Navbar', () => () => <nav data-testid="navbar" />);
 
 jest.mock('../app/context/AuthContext');
 
