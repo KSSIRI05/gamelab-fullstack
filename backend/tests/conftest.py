@@ -1,21 +1,27 @@
 import pytest
 from fastapi.testclient import TestClient
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, event
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.pool import StaticPool
 
 from main import app
 from app.database import get_db, Base
 
 # Utiliser une base de données en mémoire pour les tests
-# Cela évite les problèmes de permissions en CI/CD
+# StaticPool assure que toutes les connexions partagent la même instance en mémoire
 SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
 
 engine = create_engine(
-    SQLALCHEMY_DATABASE_URL, 
+    SQLALCHEMY_DATABASE_URL,
     connect_args={"check_same_thread": False},
+    poolclass=StaticPool,
     echo=False
 )
+
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+# Créer toutes les tables une seule fois au démarrage
+Base.metadata.create_all(bind=engine)
 
 # Remplacer la dépendance de base de données pour les tests
 def override_get_db():
@@ -29,14 +35,12 @@ app.dependency_overrides[get_db] = override_get_db
 
 @pytest.fixture(scope="function")
 def client():
-    # Créer les tables de test
-    Base.metadata.create_all(bind=engine)
+    # Nettoyer les données avant chaque test
+    for table in reversed(Base.metadata.sorted_tables):
+        engine.execute(table.delete())
     
     with TestClient(app) as test_client:
         yield test_client
-    
-    # Nettoyer après chaque test
-    Base.metadata.drop_all(bind=engine)
 
 @pytest.fixture
 def test_user():
