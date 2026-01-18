@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, selectinload
 from typing import List
 from app.database import get_db
 from app.schemas.event import EventCreate, EventResponse
@@ -13,12 +13,12 @@ router = APIRouter(tags=["events"])
 
 @router.get("/", response_model=List[EventResponse])
 async def get_events(db: Session = Depends(get_db)):
-    events = db.query(Event).all()
+    events = db.query(Event).options(selectinload(Event.registrations)).all()
     return events
 
 @router.get("/{event_id}", response_model=EventResponse)
 async def get_event(event_id: int, db: Session = Depends(get_db)):
-    event = db.query(Event).filter(Event.id == event_id).first()
+    event = db.query(Event).options(selectinload(Event.registrations)).filter(Event.id == event_id).first()
     if not event:
         raise HTTPException(status_code=404, detail="Event not found")
     
