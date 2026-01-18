@@ -14,17 +14,7 @@ router = APIRouter(tags=["events"])
 @router.get("/", response_model=List[EventResponse])
 async def get_events(db: Session = Depends(get_db)):
     events = db.query(Event).all()
-    return [EventResponse(
-        id=event.id,
-        title=event.title,
-        description=event.description,
-        date=event.date,
-        location=event.location,
-        max_participants=event.max_participants,
-        participants_count=len(event.registrations),
-        image_url=event.image_url,
-        created_at=event.created_at
-    ) for event in events]
+    return events
 
 @router.get("/{event_id}", response_model=EventResponse)
 async def get_event(event_id: int, db: Session = Depends(get_db)):
@@ -32,17 +22,7 @@ async def get_event(event_id: int, db: Session = Depends(get_db)):
     if not event:
         raise HTTPException(status_code=404, detail="Event not found")
     
-    return EventResponse(
-        id=event.id,
-        title=event.title,
-        description=event.description,
-        date=event.date,
-        location=event.location,
-        max_participants=event.max_participants,
-        participants_count=len(event.registrations),
-        image_url=event.image_url,
-        created_at=event.created_at
-    )
+    return event
 
 @router.post("/", response_model=EventResponse)
 async def create_event(
@@ -62,17 +42,7 @@ async def create_event(
     db.commit()
     db.refresh(db_event)
     
-    return EventResponse(
-        id=db_event.id,
-        title=db_event.title,
-        description=db_event.description,
-        date=db_event.date,
-        location=db_event.location,
-        max_participants=db_event.max_participants,
-        current_participants=0,
-        image_url=db_event.image_url,
-        created_at=db_event.created_at
-    )
+    return db_event
 
 @router.post("/{event_id}/register")
 async def register_for_event(
