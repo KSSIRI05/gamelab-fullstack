@@ -1,0 +1,43 @@
+@startuml
+title Register for event
+
+actor User
+participant "Frontend (Next.js)" as FE
+participant "Events API (FastAPI)" as API
+database "SQLite DB" as DB
+participant "AuthService" as Auth
+
+User -> FE: Click "Register"
+FE -> API: POST /api/events/{id}/register\nAuthorization: Bearer <token>
+API -> Auth: get_current_user(token)
+Auth -> DB: SELECT user by email
+DB --> Auth: user
+Auth --> API: current_user
+
+API -> DB: SELECT event by id
+DB --> API: event
+
+alt event not found
+  API --> FE: 404 "Event not found"
+  FE --> User: Show error
+else event found
+  API -> DB: SELECT registration by user_id/event_id
+  DB --> API: existing?
+  alt already registered
+    API --> FE: 400 "Already registered"
+    FE --> User: Show error
+  else not registered
+    API -> DB: COUNT registrations for event
+    DB --> API: count
+    alt capacity available
+      API -> DB: INSERT event_registration
+      DB --> API: ok
+      API --> FE: 200 success
+      FE --> User: Show confirmation
+    else event full
+      API --> FE: 400 "Event is full"
+      FE --> User: Show error
+    end
+  end
+end
+@enduml

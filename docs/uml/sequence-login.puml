@@ -1,0 +1,26 @@
+@startuml
+title User login (email/password)
+
+actor User
+participant "Frontend (Next.js)" as FE
+participant "Auth API (FastAPI)" as API
+database "SQLite DB" as DB
+participant "AuthService" as Auth
+
+User -> FE: Enter email/password
+FE -> API: POST /api/auth/login
+API -> DB: SELECT user by email
+DB --> API: user record
+API -> Auth: verify_password(password, hash)
+Auth --> API: ok/ko
+
+alt valid credentials
+  API -> Auth: create_access_token(user, expires)
+  Auth --> API: JWT
+  API --> FE: 200 {access_token, user}
+  FE --> User: Store token / login success
+else invalid credentials
+  API --> FE: 401 error
+  FE --> User: Show error
+end
+@enduml

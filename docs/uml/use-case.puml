@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor Visitor
+actor "Authenticated User" as AuthUser
+Visitor <|-- AuthUser
+
+rectangle "GameLab Platform" {
+  usecase "Browse events list" as UC1
+  usecase "View event details" as UC2
+  usecase "View gallery" as UC3
+  usecase "View team" as UC4
+  usecase "Contact club" as UC5
+  usecase "Register account" as UC6
+  usecase "Login" as UC7
+
+  usecase "Create event" as UC8
+  usecase "Register for event" as UC9
+  usecase "Unregister from event" as UC10
+  usecase "View my registrations" as UC11
+  usecase "View event participants" as UC12
+}
+
+Visitor --> UC1
+Visitor --> UC2
+Visitor --> UC3
+Visitor --> UC4
+Visitor --> UC5
+Visitor --> UC6
+Visitor --> UC7
+
+AuthUser --> UC8
+AuthUser --> UC9
+AuthUser --> UC10
+AuthUser --> UC11
+AuthUser --> UC12
+@enduml
