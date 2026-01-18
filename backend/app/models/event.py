@@ -17,3 +17,8 @@ class Event(Base):
     
     # Relations
     registrations = relationship("EventRegistration", back_populates="event")
+    
+    @property
+    def current_participants(self):
+        """Retourne le nombre de participants actuels"""
+        return len(self.registrations)

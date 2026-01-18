@@ -48,8 +48,6 @@ yarn-error.log*
 coverage
 
 # Docker
-*.db
-gamelab.db
 sqlite_data/
 
 # macOS
