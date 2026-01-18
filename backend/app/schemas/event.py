@@ -16,7 +16,7 @@ class EventCreate(EventBase):
 class EventResponse(EventBase):
     id: int
     created_at: datetime
-    participants_count: int = 0
+    current_participants: int = 0
     
     model_config = ConfigDict(from_attributes=True)
 
