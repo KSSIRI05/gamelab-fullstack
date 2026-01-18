@@ -2,16 +2,13 @@ import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-import os
-import tempfile
-import uuid
 
 from main import app
 from app.database import get_db, Base
 
-# Créer un fichier de base de données unique pour chaque session de test
-test_db_name = f"test_{uuid.uuid4().hex[:8]}.db"
-SQLALCHEMY_DATABASE_URL = f"sqlite:///./{test_db_name}"
+# Utiliser une base de données en mémoire pour les tests
+# Cela évite les problèmes de permissions en CI/CD
+SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, 
@@ -40,14 +37,6 @@ def client():
     
     # Nettoyer après chaque test
     Base.metadata.drop_all(bind=engine)
-    
-    # Supprimer le fichier de base de données de test
-    try:
-        if os.path.exists(test_db_name):
-            os.remove(test_db_name)
-    except PermissionError:
-        # Si le fichier ne peut pas être supprimé immédiatement, ignorer
-        pass
 
 @pytest.fixture
 def test_user():
