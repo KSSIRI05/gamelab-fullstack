@@ -1,0 +1,48 @@
+version: '3.9'
+
+services:
+  # Backend FastAPI avec SQLite
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: gamelab_backend_prod
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-sqlite:///./gamelab.db}
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS}
+      SECRET_KEY: ${SECRET_KEY}
+    ports:
+      - "8000:8000"
+    volumes:
+      - sqlite_data_prod:/app
+    networks:
+      - gamelab_network_prod
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Frontend Next.js
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: gamelab_frontend_prod
+    environment:
+      NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - gamelab_network_prod
+    restart: always
+
+volumes:
+  sqlite_data_prod:
+
+networks:
+  gamelab_network_prod:
+    driver: bridge

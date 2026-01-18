@@ -1,0 +1,40 @@
+# Frontend Dockerfile - Next.js
+
+# Stage 1: Build
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+# Copier package files
+COPY package*.json ./
+
+# Installer les dépendances
+RUN npm ci
+
+# Copier le code source
+COPY . .
+
+# Build l'app Next.js
+RUN npm run build
+
+# Stage 2: Production
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Installer serve pour servir l'app
+RUN npm install -g serve
+
+# Copier le build depuis le stage builder
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/package*.json ./
+
+# Installer les dépendances de production
+RUN npm ci --only=production
+
+# Exposer le port
+EXPOSE 3000
+
+# Command pour démarrer l'app
+CMD ["npm", "start"]
