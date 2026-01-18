@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 
 jest.mock('../../app/components/Navbar', () => () => <nav data-testid="navbar" />);
 
-jest.mock('../app/context/AuthContext');
+jest.mock('../../app/context/AuthContext');
 
 jest.mock('next/navigation', () => ({
   useRouter: jest.fn()
