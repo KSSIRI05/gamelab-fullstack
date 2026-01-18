@@ -1,8 +1,6 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from datetime import datetime
 from typing import Optional
-from .user import User
-from .event import Event
 
 class RegistrationBase(BaseModel):
     user_id: int
@@ -13,10 +11,6 @@ class RegistrationCreate(BaseModel):
 
 class Registration(RegistrationBase):
     id: int
-    registration_date: datetime
-    status: str
-    user: Optional[User] = None
-    event: Optional[Event] = None
+    registered_at: datetime
     
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
