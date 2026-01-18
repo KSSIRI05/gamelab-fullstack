@@ -1,0 +1,153 @@
+from fastapi import APIRouter, Depends, HTTPException, status
+from sqlalchemy.orm import Session
+from typing import List
+from app.database import get_db
+from app.schemas.event import EventCreate, EventResponse
+from app.models.event import Event
+from app.models.user import User
+from app.models.event_registration import EventRegistration
+from app.utils.auth import get_current_user
+from datetime import datetime
+
+router = APIRouter(tags=["events"])
+
+@router.get("/", response_model=List[EventResponse])
+async def get_events(db: Session = Depends(get_db)):
+    events = db.query(Event).all()
+    return [EventResponse(
+        id=event.id,
+        title=event.title,
+        description=event.description,
+        date=event.date,
+        location=event.location,
+        max_participants=event.max_participants,
+        current_participants=len(event.registrations),
+        image_url=event.image_url,
+        created_at=event.created_at
+    ) for event in events]
+
+@router.get("/{event_id}", response_model=EventResponse)
+async def get_event(event_id: int, db: Session = Depends(get_db)):
+    event = db.query(Event).filter(Event.id == event_id).first()
+    if not event:
+        raise HTTPException(status_code=404, detail="Event not found")
+    
+    return EventResponse(
+        id=event.id,
+        title=event.title,
+        description=event.description,
+        date=event.date,
+        location=event.location,
+        max_participants=event.max_participants,
+        current_participants=len(event.registrations),
+        image_url=event.image_url,
+        created_at=event.created_at
+    )
+
+@router.post("/", response_model=EventResponse)
+async def create_event(
+    event: EventCreate, 
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    db_event = Event(
+        title=event.title,
+        description=event.description,
+        date=event.date,
+        location=event.location,
+        max_participants=event.max_participants,
+        image_url=event.image_url
+    )
+    db.add(db_event)
+    db.commit()
+    db.refresh(db_event)
+    
+    return EventResponse(
+        id=db_event.id,
+        title=db_event.title,
+        description=db_event.description,
+        date=db_event.date,
+        location=db_event.location,
+        max_participants=db_event.max_participants,
+        current_participants=0,
+        image_url=db_event.image_url,
+        created_at=db_event.created_at
+    )
+
+@router.post("/{event_id}/register")
+async def register_for_event(
+    event_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    # Check if event exists
+    event = db.query(Event).filter(Event.id == event_id).first()
+    if not event:
+        raise HTTPException(status_code=404, detail="Event not found")
+    
+    # Check if user is already registered
+    existing_registration = db.query(EventRegistration).filter(
+        EventRegistration.event_id == event_id,
+        EventRegistration.user_id == current_user.id
+    ).first()
+    
+    if existing_registration:
+        raise HTTPException(status_code=400, detail="Already registered for this event")
+    
+    # Check if event is full
+    current_registrations = db.query(EventRegistration).filter(
+        EventRegistration.event_id == event_id
+    ).count()
+    
+    if current_registrations >= event.max_participants:
+        raise HTTPException(status_code=400, detail="Event is full")
+    
+    # Register user for event
+    registration = EventRegistration(
+        user_id=current_user.id,
+        event_id=event_id
+    )
+    db.add(registration)
+    db.commit()
+    
+    return {"message": "Successfully registered for event"}
+
+@router.delete("/{event_id}/register")
+async def unregister_from_event(
+    event_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    # Find registration
+    registration = db.query(EventRegistration).filter(
+        EventRegistration.event_id == event_id,
+        EventRegistration.user_id == current_user.id
+    ).first()
+    
+    if not registration:
+        raise HTTPException(status_code=404, detail="Registration not found")
+    
+    db.delete(registration)
+    db.commit()
+    
+    return {"message": "Successfully unregistered from event"}
+
+@router.get("/{event_id}/participants", response_model=List[dict])
+async def get_event_participants(
+    event_id: int,
+    db: Session = Depends(get_db)
+):
+    event = db.query(Event).filter(Event.id == event_id).first()
+    if not event:
+        raise HTTPException(status_code=404, detail="Event not found")
+    
+    participants = []
+    for registration in event.registrations:
+        participants.append({
+            "id": registration.user.id,
+            "name": registration.user.name,
+            "email": registration.user.email,
+            "registered_at": registration.registered_at
+        })
+    
+    return participants
