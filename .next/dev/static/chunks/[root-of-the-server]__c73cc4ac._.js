@@ -240,23 +240,11 @@ function AuthButton() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-white font-semibold",
-                            children: [
-                                user.prenom,
-                                " ",
-                                user.nom
-                            ]
-                        }, void 0, true, {
+                            children: user.name
+                        }, void 0, false, {
                             fileName: "[project]/app/components/AuthButton.tsx",
                             lineNumber: 32,
                             columnNumber: 11
-                        }, this),
-                        user.isINPTStudent && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-xs bg-green-500 text-white px-2 py-1 rounded-full",
-                            children: "INPT"
-                        }, void 0, false, {
-                            fileName: "[project]/app/components/AuthButton.tsx",
-                            lineNumber: 34,
-                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
@@ -272,12 +260,12 @@ function AuthButton() {
                         className: "text-sm"
                     }, void 0, false, {
                         fileName: "[project]/app/components/AuthButton.tsx",
-                        lineNumber: 42,
+                        lineNumber: 39,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/AuthButton.tsx",
-                    lineNumber: 37,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this)
             ]
@@ -296,7 +284,7 @@ function AuthButton() {
                 children: "Connexion"
             }, void 0, false, {
                 fileName: "[project]/app/components/AuthButton.tsx",
-                lineNumber: 50,
+                lineNumber: 47,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -305,13 +293,13 @@ function AuthButton() {
                 children: "Inscription"
             }, void 0, false, {
                 fileName: "[project]/app/components/AuthButton.tsx",
-                lineNumber: 56,
+                lineNumber: 53,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/AuthButton.tsx",
-        lineNumber: 49,
+        lineNumber: 46,
         columnNumber: 5
     }, this);
 }
@@ -346,9 +334,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$AuthButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/AuthButton.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/context/AuthContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/api.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
+;
 ;
 ;
 ;
@@ -361,11 +353,71 @@ function Olympiades() {
     _s();
     const { isAuthenticated } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    const handleInscription = ()=>{
-        if (isAuthenticated) {
-            alert('Inscription confirmée! Nous vous contacterons bientôt.');
-        } else {
+    const [isRegistering, setIsRegistering] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isRegistered, setIsRegistered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [eventId, setEventId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Olympiades.useEffect": ()=>{
+            const loadEventData = {
+                "Olympiades.useEffect.loadEventData": async ()=>{
+                    try {
+                        const events = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].getEvents();
+                        const olympiadesEvent = events.find({
+                            "Olympiades.useEffect.loadEventData.olympiadesEvent": (event)=>event.title.toLowerCase().includes('olympiades')
+                        }["Olympiades.useEffect.loadEventData.olympiadesEvent"]);
+                        if (olympiadesEvent) {
+                            setEventId(olympiadesEvent.id);
+                            if (isAuthenticated) {
+                                const registrations = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].getUserRegistrations();
+                                const isAlreadyRegistered = registrations.some({
+                                    "Olympiades.useEffect.loadEventData.isAlreadyRegistered": (reg)=>reg.event_id === olympiadesEvent.id
+                                }["Olympiades.useEffect.loadEventData.isAlreadyRegistered"]);
+                                setIsRegistered(isAlreadyRegistered);
+                            }
+                        }
+                    } catch (error) {
+                        console.error('Erreur lors du chargement de l\'événement:', error);
+                    }
+                }
+            }["Olympiades.useEffect.loadEventData"];
+            loadEventData();
+        }
+    }["Olympiades.useEffect"], [
+        isAuthenticated
+    ]);
+    const handleInscription = async ()=>{
+        if (!isAuthenticated) {
             router.push('/login?returnUrl=/evenements/olympiades');
+            return;
+        }
+        if (!eventId) {
+            alert('Événement non trouvé. Veuillez réessayer.');
+            return;
+        }
+        if (isRegistered) {
+            try {
+                setIsRegistering(true);
+                await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].unregisterFromEvent(eventId);
+                setIsRegistered(false);
+                alert('Désinscription réussie !');
+            } catch (error) {
+                console.error('Erreur lors de la désinscription:', error);
+                alert('Erreur lors de la désinscription. Veuillez réessayer.');
+            } finally{
+                setIsRegistering(false);
+            }
+        } else {
+            try {
+                setIsRegistering(true);
+                await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].registerForEvent(eventId);
+                setIsRegistered(true);
+                alert('Inscription confirmée ! Nous vous contacterons bientôt.');
+            } catch (error) {
+                console.error('Erreur lors de l\'inscription:', error);
+                alert('Erreur lors de l\'inscription. Veuillez réessayer.');
+            } finally{
+                setIsRegistering(false);
+            }
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -382,19 +434,19 @@ function Olympiades() {
                     type: "video/mp4"
                 }, void 0, false, {
                     fileName: "[project]/app/evenements/olympiades/page.tsx",
-                    lineNumber: 34,
+                    lineNumber: 94,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                lineNumber: 27,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 bg-black/80 z-10"
             }, void 0, false, {
                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                lineNumber: 38,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -412,7 +464,7 @@ function Olympiades() {
                                     src: "/logo.jpeg"
                                 }, void 0, false, {
                                     fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 104,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -420,25 +472,25 @@ function Olympiades() {
                                     children: "GAMELAB"
                                 }, void 0, false, {
                                     fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 105,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/evenements/olympiades/page.tsx",
-                            lineNumber: 43,
+                            lineNumber: 103,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "hidden lg:flex",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                lineNumber: 50,
+                                lineNumber: 110,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/evenements/olympiades/page.tsx",
-                            lineNumber: 49,
+                            lineNumber: 109,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -446,7 +498,7 @@ function Olympiades() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$AuthButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 113,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -461,12 +513,12 @@ function Olympiades() {
                                                 size: 32
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 116,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 115,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -478,12 +530,12 @@ function Olympiades() {
                                                 size: 32
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 119,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 118,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -495,35 +547,35 @@ function Olympiades() {
                                                 size: 32
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 62,
+                                                lineNumber: 122,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 114,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/evenements/olympiades/page.tsx",
-                            lineNumber: 52,
+                            lineNumber: 112,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/evenements/olympiades/page.tsx",
-                    lineNumber: 42,
+                    lineNumber: 102,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                lineNumber: 41,
+                lineNumber: 101,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -552,7 +604,7 @@ function Olympiades() {
                                         children: "🔥 Olympiades INPT"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 140,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -560,20 +612,20 @@ function Olympiades() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaCalendar"], {}, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 84,
+                                                lineNumber: 144,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "22 Avril 2026"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 145,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 143,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -581,13 +633,13 @@ function Olympiades() {
                                         children: "Bientôt disponible"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 147,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                lineNumber: 79,
+                                lineNumber: 139,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -598,7 +650,7 @@ function Olympiades() {
                                         children: "À propos"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 154,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -606,7 +658,7 @@ function Olympiades() {
                                         children: "Les Olympiades INPT sont un événement e-sport inter-écoles majeur qui rassemble les meilleures équipes de plusieurs établissements pour une compétition épique sur plusieurs jeux vidéo populaires."
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 157,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -614,13 +666,13 @@ function Olympiades() {
                                         children: "Représente ton école et affronte les meilleurs joueurs du Maroc dans une ambiance compétitive et conviviale. Gloire, honneur et récompenses attendent les vainqueurs !"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 162,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                lineNumber: 93,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -633,7 +685,7 @@ function Olympiades() {
                                                 className: "text-yellow-400 text-4xl mx-auto mb-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 111,
+                                                lineNumber: 171,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -641,7 +693,7 @@ function Olympiades() {
                                                 children: "Compétition"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 172,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -649,13 +701,13 @@ function Olympiades() {
                                                 children: "Tournoi inter-écoles de haut niveau"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 175,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 170,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -665,7 +717,7 @@ function Olympiades() {
                                                 className: "text-purple-400 text-4xl mx-auto mb-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 121,
+                                                lineNumber: 181,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -673,7 +725,7 @@ function Olympiades() {
                                                 children: "Participants"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 122,
+                                                lineNumber: 182,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -681,13 +733,13 @@ function Olympiades() {
                                                 children: "8+ écoles participantes"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 125,
+                                                lineNumber: 185,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 120,
+                                        lineNumber: 180,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -697,7 +749,7 @@ function Olympiades() {
                                                 className: "text-green-400 text-4xl mx-auto mb-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 191,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -705,7 +757,7 @@ function Olympiades() {
                                                 children: "Multi-jeux"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 192,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -713,19 +765,19 @@ function Olympiades() {
                                                 children: "CS:GO, Rocket League, Valorant, FIFA"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 195,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 130,
+                                        lineNumber: 190,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                lineNumber: 109,
+                                lineNumber: 169,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -736,7 +788,7 @@ function Olympiades() {
                                         children: "Programme"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 143,
+                                        lineNumber: 203,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -750,7 +802,7 @@ function Olympiades() {
                                                         children: "08:30 - 09:30"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 148,
+                                                        lineNumber: 208,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -758,13 +810,13 @@ function Olympiades() {
                                                         children: "Accueil des équipes"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 149,
+                                                        lineNumber: 209,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 147,
+                                                lineNumber: 207,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -775,7 +827,7 @@ function Olympiades() {
                                                         children: "09:30 - 12:30"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 152,
+                                                        lineNumber: 212,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -783,13 +835,13 @@ function Olympiades() {
                                                         children: "Tournois matinaux (CS:GO & Rocket League)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 153,
+                                                        lineNumber: 213,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 211,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -800,7 +852,7 @@ function Olympiades() {
                                                         children: "12:30 - 14:00"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 156,
+                                                        lineNumber: 216,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -808,13 +860,13 @@ function Olympiades() {
                                                         children: "Pause déjeuner et activités"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 157,
+                                                        lineNumber: 217,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 155,
+                                                lineNumber: 215,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -825,7 +877,7 @@ function Olympiades() {
                                                         children: "14:00 - 17:30"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 160,
+                                                        lineNumber: 220,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -833,13 +885,13 @@ function Olympiades() {
                                                         children: "Tournois après-midi (Valorant & FIFA)"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 161,
+                                                        lineNumber: 221,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 219,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -850,7 +902,7 @@ function Olympiades() {
                                                         children: "17:30 - 18:30"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 164,
+                                                        lineNumber: 224,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -858,25 +910,25 @@ function Olympiades() {
                                                         children: "Finales et cérémonie de clôture"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 225,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                                lineNumber: 163,
+                                                lineNumber: 223,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 146,
+                                        lineNumber: 206,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                lineNumber: 142,
+                                lineNumber: 202,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -884,57 +936,58 @@ function Olympiades() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                         onClick: handleInscription,
+                                        disabled: isRegistering || !eventId,
                                         whileHover: {
-                                            scale: 1.05
+                                            scale: isRegistering ? 1 : 1.05
                                         },
                                         whileTap: {
-                                            scale: 0.95
+                                            scale: isRegistering ? 1 : 0.95
                                         },
-                                        className: "px-12 py-4 bg-gradient-to-r from-orange-600 to-yellow-600 hover:from-orange-700 hover:to-yellow-700 text-white font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-xl",
-                                        children: "S'inscrire maintenant"
+                                        className: `px-12 py-4 font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-xl ${isRegistering ? 'bg-gray-600 cursor-not-allowed' : isRegistered ? 'bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white' : 'bg-gradient-to-r from-orange-600 to-yellow-600 hover:from-orange-700 hover:to-yellow-700 text-white'}`,
+                                        children: isRegistering ? 'Traitement...' : isRegistered ? 'Se désinscrire' : 'S\'inscrire maintenant'
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 172,
+                                        lineNumber: 232,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-gray-400 mt-4",
-                                        children: "Inscription par équipe - Ouvert à toutes les écoles"
+                                        children: isAuthenticated ? isRegistered ? 'Vous êtes inscrit à cet événement' : 'Inscription par équipe - Ouvert à toutes les écoles' : 'Connectez-vous pour vous inscrire'
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                        lineNumber: 180,
+                                        lineNumber: 252,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                                lineNumber: 171,
+                                lineNumber: 231,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/evenements/olympiades/page.tsx",
-                        lineNumber: 72,
+                        lineNumber: 132,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/evenements/olympiades/page.tsx",
-                    lineNumber: 71,
+                    lineNumber: 131,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/evenements/olympiades/page.tsx",
-                lineNumber: 70,
+                lineNumber: 130,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/evenements/olympiades/page.tsx",
-        lineNumber: 25,
+        lineNumber: 85,
         columnNumber: 5
     }, this);
 }
-_s(Olympiades, "D2COMaA+C39DZzwtmBScF2Hwl2E=", false, function() {
+_s(Olympiades, "KMQJLoRZ85MP+kyJ/9gykqnkeqc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]

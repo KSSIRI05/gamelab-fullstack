@@ -8,16 +8,105 @@ import Navbar from '../../components/Navbar';
 import AuthButton from '../../components/AuthButton';
 import { useAuth } from '../../context/AuthContext';
 import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import apiService from '../../../lib/api';
 
 export default function GameDev() {
   const { isAuthenticated } = useAuth();
   const router = useRouter();
+  const [isRegistering, setIsRegistering] = useState(false);
+  const [isRegistered, setIsRegistered] = useState(false);
+  const [eventId, setEventId] = useState<number | null>(null);
 
-  const handleInscription = () => {
-    if (isAuthenticated) {
-      alert('Inscription confirmée aux sessions GameDev!');
-    } else {
+  useEffect(() => {
+    const loadEventData = async () => {
+      try {
+        const events = await apiService.getEvents();
+        const gameDevEvent = events.find(event => 
+          event.title.toLowerCase().includes('gamedev') || event.title.toLowerCase().includes('workshop')
+        );
+        
+        if (gameDevEvent) {
+          setEventId(gameDevEvent.id);
+        } else {
+          console.warn('Événement GameDev non trouvé');
+        }
+      } catch (error) {
+        console.error('Erreur lors du chargement de l\'événement:', error);
+      }
+    };
+
+    loadEventData();
+  }, []);
+
+  useEffect(() => {
+    const loadUserRegistrations = async () => {
+      if (!isAuthenticated || !eventId) {
+        setIsRegistered(false);
+        return;
+      }
+
+      try {
+        const registrations = await apiService.getUserRegistrations();
+        const isAlreadyRegistered = registrations.some(reg => reg.event_id === eventId);
+        setIsRegistered(isAlreadyRegistered);
+      } catch (error) {
+        console.error('Erreur lors du chargement des inscriptions:', error);
+        setIsRegistered(false);
+      }
+    };
+
+    loadUserRegistrations();
+  }, [isAuthenticated, eventId]);
+
+  const handleInscription = async () => {
+    if (!isAuthenticated) {
       router.push('/login?returnUrl=/evenements/gamedev');
+      return;
+    }
+
+    if (!eventId) {
+      alert('Événement non trouvé. Veuillez réessayer.');
+      return;
+    }
+
+    if (isRegistering) {
+      return;
+    }
+
+    try {
+      setIsRegistering(true);
+      
+      if (isRegistered) {
+        await apiService.unregisterFromEvent(eventId);
+        setIsRegistered(false);
+        alert('Désinscription réussie !');
+      } else {
+        await apiService.registerForEvent(eventId);
+        setIsRegistered(true);
+        alert('Inscription confirmée aux sessions GameDev !');
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'inscription/désinscription:', error);
+      
+      if (error instanceof Error && error.message.includes('Already registered')) {
+        setIsRegistered(true);
+        alert('Vous êtes déjà inscrit à cet événement. Cliquez à nouveau pour vous désinscrire.');
+        return;
+      }
+      
+      const errorMessage = error instanceof Error ? error.message : 'Une erreur est survenue';
+      alert(`Erreur: ${errorMessage}`);
+      
+      try {
+        const registrations = await apiService.getUserRegistrations();
+        const isAlreadyRegistered = registrations.some(reg => reg.event_id === eventId);
+        setIsRegistered(isAlreadyRegistered);
+      } catch (reloadError) {
+        console.error('Erreur lors du rechargement de l\'état:', reloadError);
+      }
+    } finally {
+      setIsRegistering(false);
     }
   };
 
@@ -203,14 +292,31 @@ export default function GameDev() {
             <div className="text-center">
               <motion.button
                 onClick={handleInscription}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-12 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-xl"
+                disabled={isRegistering || !eventId}
+                whileHover={{ scale: isRegistering ? 1 : 1.05 }}
+                whileTap={{ scale: isRegistering ? 1 : 0.95 }}
+                className={`px-12 py-4 font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-xl ${
+                  isRegistering
+                    ? 'bg-gray-600 cursor-not-allowed'
+                    : isRegistered
+                    ? 'bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white'
+                    : 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white'
+                }`}
               >
-                Rejoindre les sessions
+                {isRegistering
+                  ? 'Traitement...'
+                  : isRegistered
+                  ? 'Se désinscrire'
+                  : 'Rejoindre les sessions'
+                }
               </motion.button>
               <p className="text-gray-400 mt-4">
-                Places limitées - Inscription gratuite pour les membres
+                {isAuthenticated 
+                  ? isRegistered 
+                    ? 'Vous êtes inscrit aux sessions GameDev'
+                    : 'Places limitées - Inscription gratuite pour les membres'
+                  : 'Connectez-vous pour rejoindre'
+                }
               </p>
             </div>
           </motion.div>

@@ -13,10 +13,10 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <div className="flex overscroll-none overflow-hidden flex-col min-h-screen">
+    <div className="flex overscroll-none flex-col min-h-screen">
 
       {/* Header */}
-      <header className="relative overflow-hidden flex flex-col w-full">
+      <header className="relative flex flex-col w-full">
         <div className="flex items-center justify-between w-full py-4 px-6 bg-gradient-to-r from-purple-950 to-purple-700 gap-4">
           <div className="flex items-center gap-3">
             <Image

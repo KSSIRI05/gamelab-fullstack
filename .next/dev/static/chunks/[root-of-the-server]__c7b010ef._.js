@@ -240,23 +240,11 @@ function AuthButton() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "text-white font-semibold",
-                            children: [
-                                user.prenom,
-                                " ",
-                                user.nom
-                            ]
-                        }, void 0, true, {
+                            children: user.name
+                        }, void 0, false, {
                             fileName: "[project]/app/components/AuthButton.tsx",
                             lineNumber: 32,
                             columnNumber: 11
-                        }, this),
-                        user.isINPTStudent && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "text-xs bg-green-500 text-white px-2 py-1 rounded-full",
-                            children: "INPT"
-                        }, void 0, false, {
-                            fileName: "[project]/app/components/AuthButton.tsx",
-                            lineNumber: 34,
-                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
@@ -272,12 +260,12 @@ function AuthButton() {
                         className: "text-sm"
                     }, void 0, false, {
                         fileName: "[project]/app/components/AuthButton.tsx",
-                        lineNumber: 42,
+                        lineNumber: 39,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/components/AuthButton.tsx",
-                    lineNumber: 37,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this)
             ]
@@ -296,7 +284,7 @@ function AuthButton() {
                 children: "Connexion"
             }, void 0, false, {
                 fileName: "[project]/app/components/AuthButton.tsx",
-                lineNumber: 50,
+                lineNumber: 47,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -305,13 +293,13 @@ function AuthButton() {
                 children: "Inscription"
             }, void 0, false, {
                 fileName: "[project]/app/components/AuthButton.tsx",
-                lineNumber: 56,
+                lineNumber: 53,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/components/AuthButton.tsx",
-        lineNumber: 49,
+        lineNumber: 46,
         columnNumber: 5
     }, this);
 }
@@ -346,9 +334,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$AuthButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/AuthButton.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/context/AuthContext.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/api.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
+;
 ;
 ;
 ;
@@ -361,11 +353,109 @@ function BizuCup() {
     _s();
     const { isAuthenticated } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    const handleInscription = ()=>{
-        if (isAuthenticated) {
-            alert('Inscription confirmée! Nous vous contacterons bientôt.');
-        } else {
+    const [isRegistering, setIsRegistering] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isRegistered, setIsRegistered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [eventId, setEventId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "BizuCup.useEffect": ()=>{
+            // Charger l'événement d'abord
+            const loadEventData = {
+                "BizuCup.useEffect.loadEventData": async ()=>{
+                    try {
+                        const events = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].getEvents();
+                        const bizuCupEvent = events.find({
+                            "BizuCup.useEffect.loadEventData.bizuCupEvent": (event)=>event.title.toLowerCase().includes('bizu cup')
+                        }["BizuCup.useEffect.loadEventData.bizuCupEvent"]);
+                        if (bizuCupEvent) {
+                            setEventId(bizuCupEvent.id);
+                        } else {
+                            console.warn('Événement Bizu Cup non trouvé');
+                        }
+                    } catch (error) {
+                        console.error('Erreur lors du chargement de l\'événement:', error);
+                    }
+                }
+            }["BizuCup.useEffect.loadEventData"];
+            loadEventData();
+        }
+    }["BizuCup.useEffect"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "BizuCup.useEffect": ()=>{
+            // Charger les inscriptions utilisateur seulement quand on a l'eventId et que l'utilisateur est connecté
+            const loadUserRegistrations = {
+                "BizuCup.useEffect.loadUserRegistrations": async ()=>{
+                    if (!isAuthenticated || !eventId) {
+                        setIsRegistered(false);
+                        return;
+                    }
+                    try {
+                        const registrations = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].getUserRegistrations();
+                        const isAlreadyRegistered = registrations.some({
+                            "BizuCup.useEffect.loadUserRegistrations.isAlreadyRegistered": (reg)=>reg.event_id === eventId
+                        }["BizuCup.useEffect.loadUserRegistrations.isAlreadyRegistered"]);
+                        setIsRegistered(isAlreadyRegistered);
+                        if (isAlreadyRegistered) {
+                            console.log('✅ Utilisateur déjà inscrit à l\'événement ID:', eventId);
+                        } else {
+                            console.log('ℹ️ Utilisateur pas encore inscrit à l\'événement ID:', eventId);
+                        }
+                    } catch (error) {
+                        console.error('Erreur lors du chargement des inscriptions:', error);
+                        setIsRegistered(false);
+                    }
+                }
+            }["BizuCup.useEffect.loadUserRegistrations"];
+            loadUserRegistrations();
+        }
+    }["BizuCup.useEffect"], [
+        isAuthenticated,
+        eventId
+    ]);
+    const handleInscription = async ()=>{
+        if (!isAuthenticated) {
             router.push('/login?returnUrl=/evenements/bizu-cup');
+            return;
+        }
+        if (!eventId) {
+            alert('Événement non trouvé. Veuillez réessayer.');
+            return;
+        }
+        if (isRegistering) {
+            return; // Empêche les clics multiples
+        }
+        try {
+            setIsRegistering(true);
+            if (isRegistered) {
+                // Désinscription
+                await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].unregisterFromEvent(eventId);
+                setIsRegistered(false);
+                alert('Désinscription réussie !');
+            } else {
+                // Inscription
+                await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].registerForEvent(eventId);
+                setIsRegistered(true);
+                alert('Inscription confirmée ! Nous vous contacterons bientôt.');
+            }
+        } catch (error) {
+            console.error('Erreur lors de l\'inscription/désinscription:', error);
+            // Si l'erreur est "Already registered", mettre à jour l'état et proposer la désinscription
+            if (error instanceof Error && error.message.includes('Already registered')) {
+                setIsRegistered(true);
+                alert('Vous êtes déjà inscrit à cet événement. Cliquez à nouveau pour vous désinscrire.');
+                return;
+            }
+            const errorMessage = error instanceof Error ? error.message : 'Une erreur est survenue';
+            alert(`Erreur: ${errorMessage}`);
+            // Recharger l'état en cas d'erreur pour être sûr
+            try {
+                const registrations = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].getUserRegistrations();
+                const isAlreadyRegistered = registrations.some((reg)=>reg.event_id === eventId);
+                setIsRegistered(isAlreadyRegistered);
+            } catch (reloadError) {
+                console.error('Erreur lors du rechargement de l\'état:', reloadError);
+            }
+        } finally{
+            setIsRegistering(false);
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -382,19 +472,19 @@ function BizuCup() {
                     type: "video/mp4"
                 }, void 0, false, {
                     fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                    lineNumber: 34,
+                    lineNumber: 135,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                lineNumber: 27,
+                lineNumber: 128,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "fixed inset-0 bg-black/80 z-10"
             }, void 0, false, {
                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                lineNumber: 38,
+                lineNumber: 139,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -412,7 +502,7 @@ function BizuCup() {
                                     src: "/logo.jpeg"
                                 }, void 0, false, {
                                     fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 145,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -420,25 +510,25 @@ function BizuCup() {
                                     children: "GAMELAB"
                                 }, void 0, false, {
                                     fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                    lineNumber: 45,
+                                    lineNumber: 146,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                            lineNumber: 43,
+                            lineNumber: 144,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "hidden lg:flex",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                lineNumber: 50,
+                                lineNumber: 151,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                            lineNumber: 49,
+                            lineNumber: 150,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -446,7 +536,7 @@ function BizuCup() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$AuthButton$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 154,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -461,12 +551,12 @@ function BizuCup() {
                                                 size: 32
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 56,
+                                                lineNumber: 157,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 156,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -478,12 +568,12 @@ function BizuCup() {
                                                 size: 32
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 160,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                            lineNumber: 58,
+                                            lineNumber: 159,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -495,35 +585,35 @@ function BizuCup() {
                                                 size: 32
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 62,
+                                                lineNumber: 163,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 162,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 155,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                            lineNumber: 52,
+                            lineNumber: 153,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                    lineNumber: 42,
+                    lineNumber: 143,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                lineNumber: 41,
+                lineNumber: 142,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -552,7 +642,7 @@ function BizuCup() {
                                         children: "🏆 Bizu Cup 2026"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 80,
+                                        lineNumber: 181,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -560,20 +650,20 @@ function BizuCup() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaCalendar"], {}, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 84,
+                                                lineNumber: 185,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "15 Mars 2026"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 186,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 184,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -581,13 +671,13 @@ function BizuCup() {
                                         children: "Inscriptions ouvertes"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 188,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                lineNumber: 79,
+                                lineNumber: 180,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -598,7 +688,7 @@ function BizuCup() {
                                         children: "À propos"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 195,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -606,7 +696,7 @@ function BizuCup() {
                                         children: "La Bizu Cup est le tournoi gaming le plus attendu de l'année à l'INPT ! Un événement e-sport de haut niveau qui réunit les meilleurs joueurs de la région pour des compétitions intenses et passionnantes."
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 198,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -614,13 +704,13 @@ function BizuCup() {
                                         children: "Que tu sois un joueur confirmé ou que tu veuilles simplement vivre l'expérience, la Bizu Cup est l'événement gaming à ne pas manquer. Rejoins-nous pour une journée remplie d'action, de stratégie et de fair-play !"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 203,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                lineNumber: 93,
+                                lineNumber: 194,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -633,7 +723,7 @@ function BizuCup() {
                                                 className: "text-yellow-400 text-4xl mx-auto mb-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 213,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -641,7 +731,7 @@ function BizuCup() {
                                                 children: "Prix à gagner"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 113,
+                                                lineNumber: 214,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -649,13 +739,13 @@ function BizuCup() {
                                                 children: "Récompenses et trophées pour les meilleures équipes"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 217,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 212,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -665,7 +755,7 @@ function BizuCup() {
                                                 className: "text-purple-400 text-4xl mx-auto mb-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 122,
+                                                lineNumber: 223,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -673,7 +763,7 @@ function BizuCup() {
                                                 children: "Format"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 123,
+                                                lineNumber: 224,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -681,13 +771,13 @@ function BizuCup() {
                                                 children: "Tournoi en équipe - Brackets à élimination directe"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 126,
+                                                lineNumber: 227,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 222,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -697,7 +787,7 @@ function BizuCup() {
                                                 className: "text-green-400 text-4xl mx-auto mb-3"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 132,
+                                                lineNumber: 233,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -705,7 +795,7 @@ function BizuCup() {
                                                 children: "Jeux"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 133,
+                                                lineNumber: 234,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -713,19 +803,19 @@ function BizuCup() {
                                                 children: "League of Legends, Valorant, FIFA"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 136,
+                                                lineNumber: 237,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 131,
+                                        lineNumber: 232,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                lineNumber: 110,
+                                lineNumber: 211,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -736,7 +826,7 @@ function BizuCup() {
                                         children: "Programme"
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 144,
+                                        lineNumber: 245,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -750,7 +840,7 @@ function BizuCup() {
                                                         children: "09:00 - 10:00"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 149,
+                                                        lineNumber: 250,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -758,13 +848,13 @@ function BizuCup() {
                                                         children: "Accueil et inscription sur place"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 150,
+                                                        lineNumber: 251,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 148,
+                                                lineNumber: 249,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -775,7 +865,7 @@ function BizuCup() {
                                                         children: "10:00 - 13:00"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 153,
+                                                        lineNumber: 254,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -783,13 +873,13 @@ function BizuCup() {
                                                         children: "Phase de groupes"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 154,
+                                                        lineNumber: 255,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 253,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -800,7 +890,7 @@ function BizuCup() {
                                                         children: "13:00 - 14:00"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 157,
+                                                        lineNumber: 258,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -808,13 +898,13 @@ function BizuCup() {
                                                         children: "Pause déjeuner"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 158,
+                                                        lineNumber: 259,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 156,
+                                                lineNumber: 257,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -825,7 +915,7 @@ function BizuCup() {
                                                         children: "14:00 - 17:00"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 161,
+                                                        lineNumber: 262,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -833,13 +923,13 @@ function BizuCup() {
                                                         children: "Phase éliminatoire"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 162,
+                                                        lineNumber: 263,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 160,
+                                                lineNumber: 261,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -850,7 +940,7 @@ function BizuCup() {
                                                         children: "17:00 - 18:00"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 165,
+                                                        lineNumber: 266,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -858,25 +948,25 @@ function BizuCup() {
                                                         children: "Finale et cérémonie de remise des prix"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                        lineNumber: 166,
+                                                        lineNumber: 267,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                                lineNumber: 164,
+                                                lineNumber: 265,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 147,
+                                        lineNumber: 248,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                lineNumber: 143,
+                                lineNumber: 244,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -884,57 +974,58 @@ function BizuCup() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                                         onClick: handleInscription,
+                                        disabled: isRegistering || !eventId,
                                         whileHover: {
-                                            scale: 1.05
+                                            scale: isRegistering ? 1 : 1.05
                                         },
                                         whileTap: {
-                                            scale: 0.95
+                                            scale: isRegistering ? 1 : 0.95
                                         },
-                                        className: "px-12 py-4 bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-xl",
-                                        children: "S'inscrire maintenant"
+                                        className: `px-12 py-4 font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-xl ${isRegistering ? 'bg-gray-600 cursor-not-allowed' : isRegistered ? 'bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white' : 'bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white'}`,
+                                        children: isRegistering ? 'Traitement...' : isRegistered ? 'Se désinscrire' : 'S\'inscrire maintenant'
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 173,
+                                        lineNumber: 274,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-gray-400 mt-4",
-                                        children: "Places limitées - Inscription gratuite pour les membres"
+                                        children: isAuthenticated ? isRegistered ? 'Vous êtes inscrit à cet événement' : 'Places limitées - Inscription gratuite pour les membres' : 'Connectez-vous pour vous inscrire'
                                     }, void 0, false, {
                                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                        lineNumber: 181,
+                                        lineNumber: 294,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                                lineNumber: 172,
+                                lineNumber: 273,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                        lineNumber: 72,
+                        lineNumber: 173,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                    lineNumber: 71,
+                    lineNumber: 172,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-                lineNumber: 70,
+                lineNumber: 171,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/evenements/bizu-cup/page.tsx",
-        lineNumber: 25,
+        lineNumber: 126,
         columnNumber: 5
     }, this);
 }
-_s(BizuCup, "D2COMaA+C39DZzwtmBScF2Hwl2E=", false, function() {
+_s(BizuCup, "zyqCpVT4MS9t1VthyfseQuwORcE=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$AuthContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAuth"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]

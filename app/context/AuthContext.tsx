@@ -1,22 +1,17 @@
 'use client';
 
 import { createContext, useContext, useState, useEffect, ReactNode, useMemo } from 'react';
-
-interface User {
-  id: string;
-  nom: string;
-  prenom: string;
-  email: string;
-  isINPTStudent: boolean;
-}
+import { useRouter } from 'next/navigation';
+import apiService, { User, LoginData, RegisterData } from '../../lib/api';
 
 interface AuthContextType {
   user: User | null;
-  login: (email: string, password: string) => boolean;
-  signup: (nom: string, prenom: string, email: string, password: string, isINPTStudent: boolean) => boolean;
+  login: (email: string, password: string) => Promise<boolean>;
+  signup: (name: string, email: string, password: string) => Promise<boolean>;
   logout: () => void;
   isAuthenticated: boolean;
   isLoading: boolean;
+  error: string | null;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -24,89 +19,106 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export function AuthProvider({ children }: Readonly<{ children: ReactNode }>) {
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     // Vérifier que nous sommes côté client
     if (typeof window !== 'undefined') {
-      // Charger l'utilisateur depuis localStorage au démarrage
-      try {
-        const savedUser = localStorage.getItem('user');
-        if (savedUser) {
-          setUser(JSON.parse(savedUser));
-        }
-      } catch (error) {
-        console.error('Erreur lors du chargement de l\'utilisateur:', error);
-        localStorage.removeItem('user');
-      }
+      checkAuthStatus();
     }
-    setIsLoading(false);
   }, []);
 
-  const login = (email: string, password: string): boolean => {
-    if (typeof window === 'undefined') return false;
-    
-    // Simulation de connexion (frontend seulement)
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    const foundUser = users.find((u: any) => u.email === email && u.password === password);
-    
-    if (foundUser) {
-      const { password, ...userWithoutPassword } = foundUser;
-      setUser(userWithoutPassword);
-      localStorage.setItem('user', JSON.stringify(userWithoutPassword));
-      return true;
+  const checkAuthStatus = async () => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      
+      const token = localStorage.getItem('token');
+      if (!token) {
+        setIsLoading(false);
+        return;
+      }
+
+      // Vérifier si le token est valide en récupérant le profil
+      const currentUser = await apiService.getCurrentUser();
+      setUser(currentUser);
+    } catch (error) {
+      console.error('Auth check failed:', error);
+      // Token invalide, nettoyer localStorage
+      apiService.clearToken();
+      setUser(null);
+    } finally {
+      setIsLoading(false);
     }
-    return false;
   };
 
-  const signup = (nom: string, prenom: string, email: string, password: string, isINPTStudent: boolean): boolean => {
-    if (typeof window === 'undefined') return false;
-    
-    // Simulation d'inscription (frontend seulement)
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    
-    // Vérifier si l'email existe déjà
-    if (users.some((u: any) => u.email === email)) {
+  const login = async (email: string, password: string): Promise<boolean> => {
+    try {
+      setError(null);
+      setIsLoading(true);
+
+      const loginData: LoginData = { email, password };
+      const response = await apiService.login(loginData);
+      
+      setUser(response.user);
+      return true;
+    } catch (error) {
+      console.error('Login failed:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Erreur de connexion';
+      setError(errorMessage);
       return false;
+    } finally {
+      setIsLoading(false);
     }
+  };
 
-    const newUser = {
-      id: Date.now().toString(),
-      nom,
-      prenom,
-      email,
-      password,
-      isINPTStudent
-    };
+  const signup = async (name: string, email: string, password: string): Promise<boolean> => {
+    try {
+      setError(null);
+      setIsLoading(true);
 
-    users.push(newUser);
-    localStorage.setItem('users', JSON.stringify(users));
-
-    // Connecter automatiquement après inscription
-    const { password: _, ...userWithoutPassword } = newUser;
-    setUser(userWithoutPassword);
-    localStorage.setItem('user', JSON.stringify(userWithoutPassword));
-    
-    return true;
+      const registerData: RegisterData = { name, email, password };
+      await apiService.register(registerData);
+      
+      // Connecter automatiquement après inscription
+      return await login(email, password);
+    } catch (error) {
+      console.error('Registration failed:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Erreur d\'inscription';
+      setError(errorMessage);
+      return false;
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const logout = () => {
+    apiService.clearToken();
     setUser(null);
+    setError(null);
     if (typeof window !== 'undefined') {
       localStorage.removeItem('user');
     }
   };
 
-  const value = useMemo(() => ({
-    user, 
-    login, 
-    signup, 
-    logout, 
-    isAuthenticated: !!user,
-    isLoading
-  }), [user, isLoading]);
+  const isAuthenticated = useMemo(() => user !== null, [user]);
+
+  const contextValue: AuthContextType = useMemo(
+    () => ({
+      user,
+      login,
+      signup,
+      logout,
+      isAuthenticated,
+      isLoading,
+      error,
+    }),
+    [user, isAuthenticated, isLoading, error]
+  );
 
   return (
-    <AuthContext.Provider value={value}>
+    <AuthContext.Provider value={contextValue}>
       {children}
     </AuthContext.Provider>
   );

@@ -12,21 +12,23 @@ import { useRouter } from 'next/navigation';
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const { login } = useAuth();
+  const { login, error: authError, isLoading } = useAuth();
   const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
 
-    if (login(email, password)) {
+    if (!email || !password) {
+      return; // Le HTML required s'occupera de l'affichage
+    }
+
+    const success = await login(email, password);
+    if (success) {
       // Rediriger vers la page précédente ou accueil
       const returnUrl = new URLSearchParams(globalThis.location.search).get('returnUrl') || '/';
       router.push(returnUrl);
-    } else {
-      setError('Email ou mot de passe incorrect');
     }
+    // Les erreurs sont maintenant gérées automatiquement par le contexte
   };
 
   return (
@@ -86,9 +88,9 @@ export default function Login() {
             Connecte-toi pour participer aux événements
           </p>
 
-          {error && (
+          {authError && (
             <div className="bg-red-500/20 border border-red-500 text-red-200 px-4 py-3 rounded-lg mb-6">
-              {error}
+              {authError}
             </div>
           )}
 
@@ -130,11 +132,16 @@ export default function Login() {
             {/* Submit Button */}
             <motion.button
               type="submit"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-lg"
+              disabled={isLoading}
+              whileHover={{ scale: isLoading ? 1 : 1.02 }}
+              whileTap={{ scale: isLoading ? 1 : 0.98 }}
+              className={`w-full px-8 py-4 font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-lg ${
+                isLoading 
+                  ? 'bg-gray-600 cursor-not-allowed text-gray-300'
+                  : 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white'
+              }`}
             >
-              Se connecter
+              {isLoading ? 'Connexion...' : 'Se connecter'}
             </motion.button>
           </form>
 

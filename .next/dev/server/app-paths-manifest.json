@@ -1,5 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/about/page": "app/about/page.js",
   "/contact/page": "app/contact/page.js",
   "/evenements/bizu-cup/page": "app/evenements/bizu-cup/page.js",
@@ -8,10 +7,8 @@
   "/evenements/olympiades/page": "app/evenements/olympiades/page.js",
   "/events/page": "app/events/page.js",
   "/gallery/page": "app/gallery/page.js",
-  "/inscription/page": "app/inscription/page.js",
   "/login/page": "app/login/page.js",
   "/page": "app/page.js",
   "/signup/page": "app/signup/page.js",
-  "/stream/page": "app/stream/page.js",
-  "/team/page": "app/team/page.js"
+  "/stream/page": "app/stream/page.js"
 }

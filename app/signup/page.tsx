@@ -10,37 +10,41 @@ import { useAuth } from '../context/AuthContext';
 import { useRouter } from 'next/navigation';
 
 export default function Signup() {
-  const [nom, setNom] = useState('');
-  const [prenom, setPrenom] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [isINPTStudent, setIsINPTStudent] = useState(false);
-  const [error, setError] = useState('');
-  const { signup } = useAuth();
+  const [localError, setLocalError] = useState('');
+  const { signup, error: authError, isLoading } = useAuth();
   const router = useRouter();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
+    setLocalError('');
 
+    // Validations côté client
     if (password !== confirmPassword) {
-      setError('Les mots de passe ne correspondent pas');
+      setLocalError('Les mots de passe ne correspondent pas');
       return;
     }
 
     if (password.length < 6) {
-      setError('Le mot de passe doit contenir au moins 6 caractères');
+      setLocalError('Le mot de passe doit contenir au moins 6 caractères');
       return;
     }
 
-    if (signup(nom, prenom, email, password, isINPTStudent)) {
+    if (!name.trim()) {
+      setLocalError('Le nom est requis');
+      return;
+    }
+
+    const success = await signup(name, email, password);
+    if (success) {
       // Rediriger vers la page précédente ou accueil
       const returnUrl = new URLSearchParams(globalThis.location.search).get('returnUrl') || '/';
       router.push(returnUrl);
-    } else {
-      setError('Cet email est déjà utilisé');
     }
+    // Les erreurs API sont maintenant gérées automatiquement par le contexte
   };
 
   return (
@@ -100,44 +104,29 @@ export default function Signup() {
             Rejoins la communauté GameLab INPT
           </p>
 
-          {error && (
+          {/* Affichage des erreurs */}
+          {(localError || authError) && (
             <div className="bg-red-500/20 border border-red-500 text-red-200 px-4 py-3 rounded-lg mb-6">
-              {error}
+              {localError || authError}
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Nom et Prénom */}
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="nom" className="block text-white font-semibold mb-2">
-                  <FaUser className="inline mr-2" />
-                  Nom
-                </label>
-                <input
-                  type="text"
-                  id="nom"
-                  value={nom}
-                  onChange={(e) => setNom(e.target.value)}
-                  required
-                  className="w-full px-4 py-3 bg-black/50 border border-purple-500/30 rounded-lg text-white focus:outline-none focus:border-purple-500 transition-colors"
-                  placeholder="Nom"
-                />
-              </div>
-              <div>
-                <label htmlFor="prenom" className="block text-white font-semibold mb-2">
-                  Prénom
-                </label>
-                <input
-                  type="text"
-                  id="prenom"
-                  value={prenom}
-                  onChange={(e) => setPrenom(e.target.value)}
-                  required
-                  className="w-full px-4 py-3 bg-black/50 border border-purple-500/30 rounded-lg text-white focus:outline-none focus:border-purple-500 transition-colors"
-                  placeholder="Prénom"
-                />
-              </div>
+            {/* Nom complet */}
+            <div>
+              <label htmlFor="name" className="block text-white font-semibold mb-2">
+                <FaUser className="inline mr-2" />
+                Nom complet
+              </label>
+              <input
+                type="text"
+                id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                className="w-full px-4 py-3 bg-black/50 border border-purple-500/30 rounded-lg text-white focus:outline-none focus:border-purple-500 transition-colors"
+                placeholder="Votre nom complet"
+              />
             </div>
 
             {/* Email */}
@@ -190,28 +179,19 @@ export default function Signup() {
               />
             </div>
 
-            {/* INPT Student */}
-            <div className="flex items-center gap-3 bg-black/40 rounded-lg p-4 border border-purple-500/20">
-              <input
-                type="checkbox"
-                id="isINPTStudent"
-                checked={isINPTStudent}
-                onChange={(e) => setIsINPTStudent(e.target.checked)}
-                className="w-5 h-5 accent-purple-600 cursor-pointer"
-              />
-              <label htmlFor="isINPTStudent" className="text-white font-semibold cursor-pointer">
-                Je suis étudiant(e) de l'INPT
-              </label>
-            </div>
-
             {/* Submit Button */}
             <motion.button
               type="submit"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-lg"
+              disabled={isLoading}
+              whileHover={{ scale: isLoading ? 1 : 1.02 }}
+              whileTap={{ scale: isLoading ? 1 : 0.98 }}
+              className={`w-full px-8 py-4 font-bold rounded-lg transition-all duration-300 uppercase tracking-wider text-lg ${
+                isLoading 
+                  ? 'bg-gray-600 cursor-not-allowed text-gray-300'
+                  : 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white'
+              }`}
             >
-              Créer mon compte
+              {isLoading ? 'Création du compte...' : 'Créer mon compte'}
             </motion.button>
           </form>
 
