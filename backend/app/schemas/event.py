@@ -31,16 +31,18 @@ class EventUpdate(BaseModel):
     date: Optional[datetime] = None
     location: Optional[str] = None
     max_participants: Optional[int] = None
+    image_url: Optional[str] = None
+
+class Event(EventBase):
+    id: int
+    created_at: datetime
     registrations: Optional[List] = None
     
     @computed_field
     @property
     def current_participants(self) -> int:
-        return len(self.registrations) if self.registrations elseNone
-
-class Event(EventBase):
-    id: int
-    created_at: datetime
-    current_participants: int = 0
+        return len(self.registrations) if self.registrations else 0
+    
+    model_config = ConfigDict(from_attributes=True)
     
     model_config = ConfigDict(from_attributes=True)
