@@ -4,13 +4,6 @@ Bienvenue dans le projet web du club gaming **GameLab INPT**! Site officiel et p
 
 ## Rapport du projet 
 
-Ce depot correspond au projet d'examen.
-
-Membres du groupe:
-- LACHGUER Mohamed Yassine
-- Abderrafia Haddoumi
-- Mohammed KSSIRI
-- Taha Ibourk-El-Idrissi
 
 Images Docker:
 - abdouhad/gamelab-frontend:latest
