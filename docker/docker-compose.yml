@@ -4,7 +4,7 @@ services:
   # Backend FastAPI avec SQLite
   backend:
     build:
-      context: .
+      context: ..
       dockerfile: docker/Dockerfile.backend
     image: ${DOCKER_USERNAME:-gamelab}/gamelab-backend:${IMAGE_TAG:-latest}
     container_name: ${BACKEND_CONTAINER_NAME:-gamelab_backend}
@@ -30,7 +30,7 @@ services:
   # Frontend Next.js
   frontend:
     build:
-      context: .
+      context: ..
       dockerfile: docker/Dockerfile.frontend
     image: ${DOCKER_USERNAME:-gamelab}/gamelab-frontend:${IMAGE_TAG:-latest}
     container_name: ${FRONTEND_CONTAINER_NAME:-gamelab_frontend}
